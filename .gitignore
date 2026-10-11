@@ -18,10 +18,6 @@ media/**/*.mp4
 media/**/*.mp3
 media/**/*.m4a
 
-# 书籍 OCR 全文：是受版权书籍的可搜索全文，不进公开仓库（PDF 本体见 .gitattributes 走 LFS）
-# 只入库整理产物（.md / .json / .txt 报告与结构化数据）与 .acceptance/ 验收截图
-book/**/*.html
-
 # 书籍整理前的备份稿：同为全文副本，且可由 scripts/repair_books.py 再生
 # ⚠️ scripts/verify_books.py 需要它在本地存在才能比对「正文零改动」，克隆后需自行准备
 book/**/.backup/

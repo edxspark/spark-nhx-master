@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>full</title>
+  <style>
+
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+table {
+display: table; overflow: auto;
+max-width: 100%;
+border-collapse: collapse;
+page-break-inside: avoid;
+}
+table th {
+text-align: center;
+font-weight: bold;
+}
+table td,table th {
+border: 1px solid #dfe2e5;
+padding: 6px 13px;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #c6cbd1;
+}
+table tr:nth-child(2n) {
+background-color: #f6f8fa;
+}
+
+/* ---- 目录（由 scripts/repair_toc.py 生成，勿手改） ---- */
+nav.toc { margin: 1.4em 0 2em; font-size: 0.95em; line-height: 1.5; }
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc li { list-style: none; }
+nav.toc .toc-chapter { margin: 1.15em 0 0.6em; }
+nav.toc .toc-sections { margin: 0.25em 0 0 0.2em; padding-left: 0.9em; border-left: 1px solid #e8e8e8; }
+nav.toc .toc-items { margin: 0.15em 0 0.35em 0.2em; padding-left: 1.1em; }
+nav.toc .toc-items-top { margin: 0.3em 0 0.5em 0.2em; padding-left: 0.9em; border-left: 1px solid #e8e8e8; }
+nav.toc .toc-row { display: flex; align-items: baseline; gap: 0.15em; padding: 0.1em 0; color: inherit; text-decoration: none; border-radius: 3px; }
+nav.toc a.toc-row:hover { background: #f2f6f2; }
+nav.toc .toc-leader { flex: 1 1 auto; min-width: 1em; margin: 0 0.35em; border-bottom: 1px dotted #c8c8c8; transform: translateY(-0.3em); }
+nav.toc .toc-time { color: #8b8b8b; font-size: 0.82em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+nav.toc .toc-page { color: #444; font-size: 0.88em; font-variant-numeric: tabular-nums; min-width: 2.4em; text-align: right; white-space: nowrap; }
+nav.toc .toc-l1 { font-weight: 700; font-size: 1.06em; margin-top: 0.1em; }
+nav.toc .toc-l2 { font-weight: 500; }
+nav.toc .toc-l3 { color: #3a3a3a; }
+nav.toc .toc-nolink { color: #9a9a9a; }
+nav.toc .toc-nolink .toc-page { color: #9a9a9a; }
+nav.toc .toc-note { color: #b0b0b0; font-size: 0.78em; }
+</style>
+</head>
+<body>
+<h2 id="地脈道"><sup>地</sup><sub>脈</sub>道</h2>
+<h2 id="目录">目錄</h2>
+<nav class="toc" id="toc" aria-label="目录">
+<ol class="toc-items-top"><li><a class="toc-row toc-l1" href="#序-言"><span class="toc-title">序言</span><span class="toc-leader"></span><span class="toc-page">壹</span></a></li><li><a class="toc-row toc-l1" href="#地理篇"><span class="toc-title">地理篇</span><span class="toc-leader"></span><span class="toc-page">柒</span></a><ol class="toc-items"><li><a class="toc-row toc-l2" href="#一-乾為天"><span class="toc-title">一、乾為天</span><span class="toc-leader"></span><span class="toc-page">捌</span></a></li><li><a class="toc-row toc-l2" href="#二-坤為地"><span class="toc-title">二、坤為地</span><span class="toc-leader"></span><span class="toc-page">玖</span></a></li><li><a class="toc-row toc-l2" href="#三-水雷屯"><span class="toc-title">三、水雷屯</span><span class="toc-leader"></span><span class="toc-page">壹拾</span></a></li><li><a class="toc-row toc-l2" href="#四-山水蒙"><span class="toc-title">四、山水蒙</span><span class="toc-leader"></span><span class="toc-page">壹拾</span></a></li><li><a class="toc-row toc-l2" href="#五-水天需"><span class="toc-title">五、水天需</span><span class="toc-leader"></span><span class="toc-page">壹拾壹</span></a></li><li><a class="toc-row toc-l2" href="#六-天水訟"><span class="toc-title">六、天水訟</span><span class="toc-leader"></span><span class="toc-page">壹拾貳</span></a></li><li><a class="toc-row toc-l2" href="#七-地水師"><span class="toc-title">七、地水師</span><span class="toc-leader"></span><span class="toc-page">壹拾貳</span></a></li><li><a class="toc-row toc-l2" href="#八-水地比"><span class="toc-title">八、水地比</span><span class="toc-leader"></span><span class="toc-page">壹拾參</span></a></li><li><a class="toc-row toc-l2" href="#九-風天小畜"><span class="toc-title">九、風天小畜</span><span class="toc-leader"></span><span class="toc-page">壹拾肆</span></a></li><li><a class="toc-row toc-l2" href="#十-天澤履"><span class="toc-title">十、天澤履</span><span class="toc-leader"></span><span class="toc-page">壹拾肆</span></a></li><li><a class="toc-row toc-l2" href="#十一-地天泰"><span class="toc-title">十一、地天泰</span><span class="toc-leader"></span><span class="toc-page">壹拾伍</span></a></li><li><a class="toc-row toc-l2" href="#十二-天地否"><span class="toc-title">十二、天地否</span><span class="toc-leader"></span><span class="toc-page">壹拾陸</span></a></li><li><a class="toc-row toc-l2" href="#十三-天火同人"><span class="toc-title">十三、天火同人</span><span class="toc-leader"></span><span class="toc-page">壹拾柒</span></a></li><li><a class="toc-row toc-l2" href="#十四-火天大有"><span class="toc-title">十四、火天大有</span><span class="toc-leader"></span><span class="toc-page">壹拾柒</span></a></li><li><a class="toc-row toc-l2" href="#十五-地山謙"><span class="toc-title">十五、地山謙</span><span class="toc-leader"></span><span class="toc-page">壹拾捌</span></a></li><li><a class="toc-row toc-l2" href="#十六-雷地豫"><span class="toc-title">十六、雷地豫</span><span class="toc-leader"></span><span class="toc-page">壹拾玖</span></a></li><li><a class="toc-row toc-l2" href="#十七-澤雷隨"><span class="toc-title">十七、澤雷隨</span><span class="toc-leader"></span><span class="toc-page">壹拾玖</span></a></li><li><a class="toc-row toc-l2" href="#十八-山風蠱"><span class="toc-title">十八、山風蠱</span><span class="toc-leader"></span><span class="toc-page">貳拾</span></a></li><li><a class="toc-row toc-l2" href="#十九-地澤臨"><span class="toc-title">十九、地澤臨</span><span class="toc-leader"></span><span class="toc-page">貳拾</span></a></li><li><a class="toc-row toc-l2" href="#二十-風地觀"><span class="toc-title">二十、風地觀</span><span class="toc-leader"></span><span class="toc-page">貳拾壹</span></a></li><li><a class="toc-row toc-l2" href="#二十一-火雷噬嗑"><span class="toc-title">二十一、火雷噬嗑</span><span class="toc-leader"></span><span class="toc-page">貳拾貳</span></a></li><li><a class="toc-row toc-l2" href="#二十二-山火賁"><span class="toc-title">二十二、山火賁</span><span class="toc-leader"></span><span class="toc-page">貳拾貳</span></a></li><li><a class="toc-row toc-l2" href="#二十三-山地剝"><span class="toc-title">二十三、山地剝</span><span class="toc-leader"></span><span class="toc-page">貳拾參</span></a></li><li><a class="toc-row toc-l2" href="#二十四-地雷復"><span class="toc-title">二十四、地雷復</span><span class="toc-leader"></span><span class="toc-page">貳拾肆</span></a></li><li><a class="toc-row toc-l2" href="#二十五-天雷無妄"><span class="toc-title">二十五、天雷無妄</span><span class="toc-leader"></span><span class="toc-page">貳拾伍</span></a></li><li><a class="toc-row toc-l2" href="#二十六-山天大畜"><span class="toc-title">二十六、山天大畜</span><span class="toc-leader"></span><span class="toc-page">貳拾伍</span></a></li><li><a class="toc-row toc-l2" href="#二十七-山雷頤"><span class="toc-title">二十七、山雷頤</span><span class="toc-leader"></span><span class="toc-page">貳拾陸</span></a></li><li><a class="toc-row toc-l2" href="#二十八-澤風大過"><span class="toc-title">二十八、澤風大過</span><span class="toc-leader"></span><span class="toc-page">貳拾柒</span></a></li><li><a class="toc-row toc-l2" href="#二十九-坎為水"><span class="toc-title">二十九、坎為水</span><span class="toc-leader"></span><span class="toc-page">貳拾柒</span></a></li><li><a class="toc-row toc-l2" href="#三十-離為火"><span class="toc-title">三十、離為火</span><span class="toc-leader"></span><span class="toc-page">貳拾捌</span></a></li><li><a class="toc-row toc-l2" href="#三十一-澤山鹹"><span class="toc-title">三十一、澤山鹹</span><span class="toc-leader"></span><span class="toc-page">貳拾玖</span></a></li><li><a class="toc-row toc-l2" href="#三十二-雷風恒"><span class="toc-title">三十二、雷風恒</span><span class="toc-leader"></span><span class="toc-page">貳拾玖</span></a></li><li><span class="toc-row toc-l2 toc-nolink" title="正文无对应标题（原稿此处无此标题）"><span class="toc-title">三十三、天山遜</span><span class="toc-leader"></span><span class="toc-page">貳拾玖</span></span></li><li><a class="toc-row toc-l2" href="#三十四-雷天大壯"><span class="toc-title">三十四、雷天大壯</span><span class="toc-leader"></span><span class="toc-page">參拾</span></a></li><li><a class="toc-row toc-l2" href="#三十五-火地晉"><span class="toc-title">三十五、火地晉</span><span class="toc-leader"></span><span class="toc-page">參拾</span></a></li><li><a class="toc-row toc-l2" href="#三十六-地火明夷"><span class="toc-title">三十六、地火明夷</span><span class="toc-leader"></span><span class="toc-page">參拾壹</span></a></li><li><a class="toc-row toc-l2" href="#三十七-風火家人"><span class="toc-title">三十七、風火家人</span><span class="toc-leader"></span><span class="toc-page">參拾壹</span></a></li><li><a class="toc-row toc-l2" href="#三十八-火澤睽"><span class="toc-title">三十八、火澤睽</span><span class="toc-leader"></span><span class="toc-page">參拾貳</span></a></li><li><a class="toc-row toc-l2" href="#三十九-水山蹇"><span class="toc-title">三十九、水山蹇</span><span class="toc-leader"></span><span class="toc-page">參拾貳</span></a></li><li><a class="toc-row toc-l2" href="#四十-雷水解"><span class="toc-title">四十、雷水解</span><span class="toc-leader"></span><span class="toc-page">參拾參</span></a></li><li><a class="toc-row toc-l2" href="#四十一-山澤損"><span class="toc-title">四十一、山澤損</span><span class="toc-leader"></span><span class="toc-page">參拾參</span></a></li><li><a class="toc-row toc-l2" href="#四十二-風雷益"><span class="toc-title">四十二、風雷益</span><span class="toc-leader"></span><span class="toc-page">參拾參</span></a></li><li><a class="toc-row toc-l2" href="#四十三-澤天夬"><span class="toc-title">四十三、澤天夬</span><span class="toc-leader"></span><span class="toc-page">參拾肆</span></a></li><li><a class="toc-row toc-l2" href="#四十四-天風姤"><span class="toc-title">四十四、天風姤</span><span class="toc-leader"></span><span class="toc-page">參拾肆</span></a></li><li><a class="toc-row toc-l2" href="#四十五-澤地萃"><span class="toc-title">四十五、澤地萃</span><span class="toc-leader"></span><span class="toc-page">參拾肆</span></a></li><li><a class="toc-row toc-l2" href="#四十六-地風升"><span class="toc-title">四十六、地風升</span><span class="toc-leader"></span><span class="toc-page">參拾伍</span></a></li><li><a class="toc-row toc-l2" href="#四十七-澤水困"><span class="toc-title">四十七、澤水困</span><span class="toc-leader"></span><span class="toc-page">參拾伍</span></a></li><li><a class="toc-row toc-l2" href="#四十八-水風井"><span class="toc-title">四十八、水風井</span><span class="toc-leader"></span><span class="toc-page">參拾陸</span></a></li><li><a class="toc-row toc-l2" href="#四十九-澤火革"><span class="toc-title">四十九、澤火革</span><span class="toc-leader"></span><span class="toc-page">參拾陸</span></a></li><li><a class="toc-row toc-l2" href="#五十-火風鼎"><span class="toc-title">五十、火風鼎</span><span class="toc-leader"></span><span class="toc-page">參拾陸</span></a></li><li><a class="toc-row toc-l2" href="#五十一-震為雷"><span class="toc-title">五十一、震為雷</span><span class="toc-leader"></span><span class="toc-page">參拾柒</span></a></li><li><a class="toc-row toc-l2" href="#五十二-艮為山"><span class="toc-title">五十二、艮為山</span><span class="toc-leader"></span><span class="toc-page">參拾柒</span></a></li><li><a class="toc-row toc-l2" href="#五十三-風山漸"><span class="toc-title">五十三、風山漸</span><span class="toc-leader"></span><span class="toc-page">參拾捌</span></a></li><li><a class="toc-row toc-l2" href="#五十四-雷澤歸妹"><span class="toc-title">五十四、雷澤歸妹</span><span class="toc-leader"></span><span class="toc-page">參拾捌</span></a></li><li><a class="toc-row toc-l2" href="#五十五-雷火豐"><span class="toc-title">五十五、雷火豐</span><span class="toc-leader"></span><span class="toc-page">參拾玖</span></a></li><li><a class="toc-row toc-l2" href="#五十六-火山旅"><span class="toc-title">五十六、火山旅</span><span class="toc-leader"></span><span class="toc-page">參拾玖</span></a></li><li><a class="toc-row toc-l2" href="#五十七-巽為風"><span class="toc-title">五十七、巽為風</span><span class="toc-leader"></span><span class="toc-page">肆拾</span></a></li><li><a class="toc-row toc-l2" href="#五十八-兌為澤"><span class="toc-title">五十八、兌為澤</span><span class="toc-leader"></span><span class="toc-page">肆拾</span></a></li><li><a class="toc-row toc-l2" href="#五十九-風水渙"><span class="toc-title">五十九、風水渙</span><span class="toc-leader"></span><span class="toc-page">肆拾</span></a></li><li><a class="toc-row toc-l2" href="#六十-水澤節"><span class="toc-title">六十、水澤節</span><span class="toc-leader"></span><span class="toc-page">肆拾壹</span></a></li><li><a class="toc-row toc-l2" href="#六十一-風澤中孚"><span class="toc-title">六十一、風澤中孚</span><span class="toc-leader"></span><span class="toc-page">肆拾壹</span></a></li><li><a class="toc-row toc-l2" href="#六十二-雷山小過"><span class="toc-title">六十二、雷山小過</span><span class="toc-leader"></span><span class="toc-page">肆拾貳</span></a></li><li><a class="toc-row toc-l2" href="#六十三-水火既濟"><span class="toc-title">六十三、水火既濟</span><span class="toc-leader"></span><span class="toc-page">肆拾貳</span></a></li><li><a class="toc-row toc-l2" href="#六十四-水火未濟"><span class="toc-title">六十四、水火未濟</span><span class="toc-leader"></span><span class="toc-page">肆拾貳</span></a></li></ol></li><li><a class="toc-row toc-l1" href="#導言"><span class="toc-title">導言</span><span class="toc-leader"></span><span class="toc-page">肆拾參</span></a></li><li><a class="toc-row toc-l1" href="#風水篇"><span class="toc-title">風水篇</span><span class="toc-leader"></span><span class="toc-page">肆拾伍</span></a><ol class="toc-items"><li><a class="toc-row toc-l2" href="#一-如何分辨-龍"><span class="toc-title">（一）如何分辨「龍」</span><span class="toc-leader"></span><span class="toc-page">肆拾捌</span></a></li><li><a class="toc-row toc-l2" href="#二-如何看-水"><span class="toc-title">（二）如何看「水」</span><span class="toc-leader"></span><span class="toc-page">伍拾</span></a></li><li><a class="toc-row toc-l2" href="#三-如何看-明堂"><span class="toc-title">（三）如何看「明堂」</span><span class="toc-leader"></span><span class="toc-page">伍拾參</span></a></li><li><a class="toc-row toc-l2" href="#四-如何看-案山"><span class="toc-title">（四）如何看「案山」</span><span class="toc-leader"></span><span class="toc-page">伍拾肆</span></a></li><li><a class="toc-row toc-l2" href="#五-如何看-朝山"><span class="toc-title">（五）如何看「朝山」</span><span class="toc-leader"></span><span class="toc-page">伍拾伍</span></a></li><li><a class="toc-row toc-l2" href="#六-如何看-水-口"><span class="toc-title">（六）如何看「水口」</span><span class="toc-leader"></span><span class="toc-page">伍拾陸</span></a></li><li><a class="toc-row toc-l2" href="#七-如何看-水-口砂"><span class="toc-title">（七）如何看「水口砂」</span><span class="toc-leader"></span><span class="toc-page">伍拾陸</span></a></li><li><a class="toc-row toc-l2" href="#八-如何看-青龍-白虎"><span class="toc-title">（八）如何看「青龍」「白虎」</span><span class="toc-leader"></span><span class="toc-page">伍拾陸</span></a></li><li><a class="toc-row toc-l2" href="#九-如何看-官星"><span class="toc-title">（九）如何看「官星」</span><span class="toc-leader"></span><span class="toc-page">伍拾捌</span></a></li><li><a class="toc-row toc-l2" href="#十-如何看-鬼星"><span class="toc-title">（十）如何看「鬼星」</span><span class="toc-leader"></span><span class="toc-page">伍拾捌</span></a></li><li><a class="toc-row toc-l2" href="#十一-如何測出-結穴-所在"><span class="toc-title">（十一）如何測出「結穴」所在</span><span class="toc-leader"></span><span class="toc-page">伍拾捌</span></a></li></ol></li><li><a class="toc-row toc-l1" href="#結語"><span class="toc-title">結語</span><span class="toc-leader"></span><span class="toc-page">陸拾肆</span></a></li></ol>
+</nav>
+<h2 id="序-言">序言</h2>
+<p>吾人研讀易經 必須要能夠很靈活的運用於 日 常生活上 現在工商業社會
+大家都忙碌 學校畢業後 為了工作 為了家庭 已無法再分身研讀其他學問
+更遑論易經的研究 可能耗時一生 其結果又很可能徒勞無功 故世人但知易經很好
+卻無法實際的運用在生活上</p>
+<p>本書的創作 在立一個簡易 的法門 使人人都能一 目 了然的在最短的時 間
+內體會易經的精神面<sub>，</sub> 現今很多博士們寫 了 一些論文
+其法不過翻遍很多書籍 東挪西移的拼湊成一篇文章 其論創作 少之可憐</p>
+<p>本書名地脈道 其來源依據奇門佈列 由易經八卦來解釋
+人所受地理位置及家庭成員 間 的關係<sub>，</sub> 人人瞭解後<sub>，</sub>
+必可以在事情發生之前先瞭解到將會如何 如何避免
+並可以預知其演進的過程為何<sub>。</sub> 以上等等<sub>，</sub>
+在研讀了地脈道後<sub>，</sub>
+就可以輕而易舉的瞭解到站在外面如何看到裡面<sub>。</sub></p>
+<p>吾人試舉一例說明 有一位很愛兒子的媽媽 望子成龍之心諸君可想而知 因為愛
+的深 責必切 處處要求兒子要如何如何的做<sub>，</sub> 每 日
+督導不遺餘力的做<sub>，</sub> 以為這樣就是好母親<sub>，</sub>
+以為這樣兒子就會很好 結果有一天發現兒子鬧 同性戀 希望兒子做醫師
+結果兒子沒興趣 他喜歡服裝設計 如此一來 其如頓入深淵之中 痛苦非常
+諸如此類的事常發生在吾人身側 其結果只能大嘆父母難為<sub>，</sub>
+兒子不孝等<sub>，</sub> 於事皆無補<sub>。</sub></p>
+<p>在我陳述地脈道之前
+我先正名一些名詞給諸位讀者使對世之事物有更深一層瞭解<sub>：</sub></p>
+<p>一 何謂 「學問 」 <sub>：</sub> 吾人讀書不論是文 理 法 商 醫 農等
+分門別類很多 但充其量只不過能稱為一種專業知識而已 不能稱為學問 所謂學問
+是你研習 了 以後 改變你整個人生態度重新換做是一人 簡言之 就是能使你 自
+內心改變起的 方可稱之「學問 」 <sub>。</sub> 現今許多人學了法律
+反而知法枉法 法律並沒教好他 只使他更有多一層保障來做壞事而已
+故只可稱為知識 不可稱為學問 如一位學者 不論其研究什麼知識 是什麼專長
+但到後來能進入一性靈的階段<sub>，</sub>
+把天下所有復雜的事簡化為幾個簡單的原則 此人必是大學問家 是屬於宗師級的人
+值得令人敬仰</p>
+<p>二 真理<sub>：</sub> 何謂 「真理」 ？ 人人皆懂 但似是而非
+總是無法令人體會其精髓的一個名稱 吾人下定義為<sub>：</sub>
+真理是無所不在的存在一句話中 一件事上 一個小動作上 吾人都可 日 日 接觸
+但卻不多人能深深體悟 它可讓你從任何角度去看它
+它都是對的且沒有例外<sub>，</sub> 我既論命運<sub>，</sub>
+就從命運來舉例看看何謂真理？</p>
+<p>今人之論命全世界各種族皆有 其法不一 但 目 的一樣
+都是希望能於事前先預知凶事或吉事 可以趨吉避凶 防患於未然<sub>。</sub>
+但吾人綜觀世人論命 西洋人很淺很粗不提 中 國人以八字為最精準之命學
+可獨領風騷 但為何一 門很好的學問 會受到許多人質疑 其理由很簡單
+因為許多人們提出 的問題 命學家都無法找到很合適的答案來解說 自然人心不服
+故吾人論命首先勿怪世人會抱以懷疑之眼光 應先捫心 自 問 自
+己是否有充足的實力研究透徹瞭解人生 讀了很足夠的知識 消化了 以後 來改變引
+導前來求教的人呢？ 人最易犯的錯誤就是認為 自 己永遠是對的 別人永遠是錯的
+此種觀念一生 充其量不過是一十足之小人 不但缺乏見識知識亦必不足
+且因不知己過 其終身也不會進步 人們常問算八字固然有些非常精準 但
+同時生人為何不 同 ？ 算出禍害又無法避免 其又如何呢？ 諸如此類問題
+一直盤旋在人們腦中揮之不去有很多前輩先賢 提出 同時生人不同命的解釋
+有的說因為出生北方 南方不同 其在陸上 在水上不同 那外國人呢？
+同時在中國出生的 外國亦有 為何不同 ？ 故此極不合理
+太過牽強附會了有的說此命為三鼠夜遊格 富人家境好 其生子之時 家中張燈結彩
+燈火通明 鼠必避開 不貴乃因不成正格 而同時生人亦為三鼠夜遊格<sub>，</sub>
+但因在貧家<sub>，</sub> 其燈如豆<sub>，</sub> 鼠乃大行其道<sub>，</sub>
+故反得大貴<sub>。</sub>如此說成立 那姑不論外國本國 現今人出生皆在醫院中
+無所謂富貴之人不同 貧人不同 其燈皆一樣 其又如何解釋？ 雙生兒同時出世
+前後差距不多 為何不同呢？ 再者就算命理學可信 吉凶禍福 如何避免？
+有人提出畫符唸咒 有人提倡買玉 有人提倡宗教儀式等 其不提還好 提了之後
+更被人用迷信眼光去看他終致造成無法挽救之結果 各派林立各說各話
+始終讓人摸不清頭緒 吾可語讀者 易經上傳雲 吾人仰觀天文 俯察地理 中知人事
+能知此 可以謂知易矣 現今命學都在天文上打轉 而無法在地理上 找出答案
+致令天文地理兩不相通 其本為一物 但卻苦無管道相通 此書之地脈道
+即為連絡管道 同時出生之人 因住的地理位置不同 而產生不同想法
+當同時生人想法不同 其做法自不同 結果必大異其趣
+地脈道即在探討為何地理位置不同 其結果不同 如何去讀出它的不同
+所以有了地脈道後 論八字就變成一工具 如何化解就在地脈道上 輕輕一動
+全盤皆變 且吾人已將理論簡化 使人人易讀 易於應用 且不迷信 不摻入任何宗教
+但卻融入所有宗教的道理在 內 所以有了地脈道 命運學就趨於完整
+不但可知為何同時生人不同命運 且知如何化解 使能從任何角度看命運學
+皆是對的 此處正式言命運學 乃是天文地理併用 天文為命 地理為運 故名之
+如算命之人只知用八字 子平法 鐵版數 卜卦 鬥數 看相 摸骨等角度來
+充其量不過是天文學或經驗學 無法以命運學來論之 吾所謂
+命是天註定的運操之在我手中 方是正確的 今人動輒說<sub>：</sub>
+「我不相信命運 因為命運是操在我手中 」 說此話的人 我給他一個名詞
+此必為</p>
+<p>「迷信」 之人<sub>。</sub></p>
+<p>三 何謂 「 迷信 」 <sub>：</sub> 其定義是 迷失在 自 己 的無知與 自
+信之中 稱之為 「迷信」 易卦中之離卦 其以 中虛為明乃真明也
+今人對事物的專業並不瞭解 卻已研判出好壞且深信不疑 此類迷信人最多最不可取
+比如有人問你 信不信中醫？ 你回答信或不信都不對 你說信
+必須有相當之認識中醫方可 你說不信 必須更有相當之實力 方可說不信
+現代人夜郎 自 大 以為 自 己是最聰明的<sub>，</sub> 誰不服誰<sub>，</sub>
+一味的亂 由 自 己 的無知來認定事情<sub>，</sub> 其產生之危險
+必可立見矣<sub>。</sub></p>
+<p>四<sub>、</sub> 何謂 「 無知 」 ？ 孔子曰 <sub>：</sub>
+知之為知之<sub>，</sub> 不知為不知 <sub>，</sub> 是知也 此真知灼見
+今人無法瞭解孔子之原意 在不明瞭事情之時卻任意下決定<sub>，</sub> 你問他
+（她） 懂不懂？ 他 （她） 又完全不懂<sub>，</sub> 反正不信就是了
+殊不知世上絕沒有如此偉大之人 由他的決定 可以改變一切
+你的信與不信產生於你的無知 如何信服於人 如何改變他人呢？
+現今在臺灣社會中此無知之人居多數 希望大家能捫心自 問<sub>，</sub> 憑
+良心 良知說話<sub>，</sub> 絕不可對 自
+己不懂之學問任意下判斷<sub>，</sub> 如此你的判斷不但服不了人 反而 自
+己招凶矣 只傷害了 自 己而已</p>
+<p>地脈道一書<sub>，</sub> 包含了風水與地理二篇<sub>，</sub>
+其理論之依據完全是易經演繹出來的 經過簡化手續之後 相信讀者研習後
+必能事半功倍的於短時間之內 獲得吾之數十年的經驗 易之本義就是要能知簡易
+<sub>，</sub> 知變易 <sub>，</sub> 知不易 <sub>，</sub> 許多人讀了
+易經以後<sub>，</sub> 摸不清頭緒<sub>，</sub> 就認為它很難<sub>，</sub>
+其實易就是易 <sub>，</sub> 其光明大道如 日 月 運行不易 <sub>，</sub> 故
+日 月 為易 <sub>。</sub></p>
+<h2 id="地理篇">地理篇</h2>
+<p>現今世面之流行三元<sub>、</sub> 三合二派理論<sub>，</sub> 爭議處很多
+<sub>，</sub> 吾人觀之知其有爭議之始因 皆因其太過復雜 太在形式上求
+而失卻其神 以致人人各說其話 派系之多 令人眼花瞭亂 無所依從 如果諸君學了
+以下之理論<sub>，</sub> 不但簡單易學<sub>，</sub>
+且立竿見影<sub>，</sub> 絕無人會說你是迷信的 至於其如何放入陽宅中來看？
+為何讀出該屬何卦？ 如何正確無誤的立可知曉？ 請諸君看我的錄影帶中 自
+有詳細介紹 此處不再詳言 請君莫怪 因我們 中
+國人向不知智慧財產權之重要總是想盡辦法剽竊他人著作為已的 為防止此類小人
+故讀者此時必須參考錄影帶之說明方可知 光讀此書必無用 會不知如 何變易
+<sub>，</sub> 何謂不易 <sub>，</sub> 何為簡易 ？</p>
+<p>所有卦在陽宅上產生之功能 吾人皆分事業 健康 婚姻 子女等各種角度來看
+以及流年之加減 為何同時生人 不同時婚？不同時升官？ 不同時生子？
+有人生女？ 有人生子？ 皆有解答在後</p>
+<h2 id="一-乾為天">一、乾為天䷀</h2>
+<p>此卦出現 官人逢之舉步青雲 心想事成 發達時往往比平常快 且越級晉升</p>
+<p>商人逢之 為做生意當老闆之人 財多祿豐 領導統御手段來自 天生好手
+能當機立斷 掌握時機 成就不可限量<sub>。</sub></p>
+<p>對於家庭 有強烈之責任感 為一 良好丈夫 賢能的父親 但須切記
+必須正名之人 即其正式負責人居之 乃可成此卦 如為未婚人 不可能出現此卦
+所以在陽宅之出現時機必在婚後 居此位且堅心到底 必有大成就 例如總統也是
+由公務員做起 其特性在其始終如一在此路上持之以恆 方可達到 今人常變工作 終
+日忙於找尋適合 自 己的工作 結果必終身無成就
+所以吾人在知曉此一真理之後<sub>，</sub>
+向求教之人說服其能居乾為天之卦位<sub>，</sub>
+則其心念必能成為一堅持到底之人 舉凡世上有成就之人 其一生絕不輕易離開其位
+堅守原則 認清 自 己的實力 知道 自 己要追尋什麼 生命的意義 能一 目 了然
+擺脫了財富名利之慾 人能無欲則剛 乃天經地義之事 加之深謀遠慮 知所進退
+當必有所成</p>
+<p>吾人之定位 其 目 的在讓人能明瞭知所進退 存亡之機
+讀易不過如此<sub>，</sub>
+許多人知道且發表言論來提示人們如何拿捏的準<sub>，</sub>
+表示已瞭解到其重要性 但往往人性在聽時煞有其事的似乎瞭解了
+可是事情一來卻什麼都忘了 有的人天生好手 在後天培養之下 乃能做到
+但並非每一人都可如此 所以我們利用陽宅來定位 就如同電腦鎖定之後 其
+自然演生之過程 造成其為天生好手在事機之來時一舉一動 都很適時的令 自
+己不逾越已份 知所進退 其成就必能過於常人<sub>。</sub></p>
+<p>我常苦 口婆心的勸人居定位 有時甚而疾聲厲呼的要求 希望他好
+但改位的動作 卻不一定都會去做 只好看個人的福份了總不能每一位上門求教的人
+我都把易經八卦重講一遍 使其瞭解到其重要性 可改變一生 使明天更美好
+對不對？</p>
+<h2 id="二-坤為地">二、坤為地䷁</h2>
+<p>此格在陽宅上出現 就如易之言地厚能載物一樣 已婚女人才有 其包含寡居
+且有子女同住 此局方現</p>
+<p>代表意義為婚姻主破散<sub>，</sub> 孤軍奮戰<sub>，</sub> 肩
+負一家之重任<sub>，</sub> 夫宮不得志造成此果 如以事業上論 則官家掌權
+商人賺錢易如反掌女中強人型 其志過丈夫 無人能及
+但缺點為到老孤單無子女願居身側 因個性會趨於孤僻</p>
+<p>婚破後 不再有婚 何時婚破須看命 運只有佔一半並非全部 即令有對象出現
+不過只 能 同居 而於婚姻 將不再有第二次<sub>，</sub>
+這是肯定的<sub>。</sub></p>
+<p>此卦禁忌在其出現後 公司行號必須正妻之名 即女人當家方有成就 很多人公司
+負責人為丈夫 惟乾卦可行 但卻居坤位 始成破格 終必敗的 故如有一女人家
+只要事業 只要健康 對於婚姻因前次之失敗 已無興趣再婚者 此卦對其大利
+終其一生成就很大 財祿無缺 到老平安 必無夫之牽掛 此時男人對她來說只是負擔
+終無所助 老來近於宗教 行善之人</p>
+<h2 id="三-水雷屯">三、水雷屯䷂</h2>
+<p>此卦為次子卦 時機在長子未婚 且同居一處 方可論之 一旦長子或本人結婚
+此局立消 切記</p>
+<p>次子居此 則 比長子早婚 比同時出生之人早二年結婚 但有禁忌 如
+肖狗或狄姓之人 主夭折 此卦大凶 又逢犬年加凶 肖牛人 必任妻擺佈 背離家庭
+不顧父母 所以如其他人成此局只不過早婚而已 對犬 牛人主凶 不利</p>
+<p>屯卦有一運用 <sub>，</sub> 在家族事業<sub>，</sub>
+世代交替時<sub>，</sub> 父必使次子繼位長子失寵 其運如此 吾人觀命時
+必可發現 次子之事業必優於長子 才智能力超越長子多多 自 然而然居此局
+故吾人入宅如發現此局 反過來看 亦可得到很正確之結論 所以命運同參
+方可瞭解同 時生人之結果不 同 <sub>，</sub> 即令同
+時生人都為次子<sub>，</sub> 且長子屬 肖 也同<sub>，</sub>
+但卻不一定長兄生時皆亦 同<sub>，</sub> 差異即在此<sub>。</sub></p>
+<p>次子越位 志過長兄局 已定出 個性上亦 同</p>
+<h2 id="四-山水蒙">四、山水蒙䷃</h2>
+<p>陽宅上此局 出現 必有三子居家中 且未婚 排行第三兒子</p>
+<p>出此局其造成<sub>：</sub></p>
+<p>一 以蒙蔽之法欺家人 惟利是圖</p>
+<p>二 本身愚昧 不知進退<sub>。</sub></p>
+<p>三 性剛不聽兄長之言 獨行獨斷</p>
+<p>四 較次子早婚 較長子晚婚</p>
+<p>五 比同時生人早七年婚</p>
+<p>六 常喜賭博性之錢祿 故往往求財遇險之象</p>
+<p>吾人入宅發現此局 當及早對其改局 惟有使他本人想通
+方可助他<sub>，</sub> 否則 即令父母耳提面命<sub>，</sub>
+亦於事無補<sub>，</sub> 成敗在一念之間耳 <sub>。</sub></p>
+<p>蒙之生 由 已之念 俗言 二片葉子放在眼前 泰山也看不到了 <sub>。</sub>
+可見一念之差<sub>，</sub> 距離有如此遠<sub>，</sub>
+更遑論可能誤一世<sub>，</sub> 待後悔後 已是百年身矣
+抱持僥倖心理之人是最要不得的 你不會有第二次機會再來過的<sub>，</sub>
+切記 ！ 切記 ！</p>
+<h2 id="五-水天需">五、水天需䷄</h2>
+<p>此卦出現 代表其人智慧成長快速 勢必超越同年紀同時生人多多<sub>，</sub>
+且個性剛烈<sub>，</sub> 不受建言<sub>，</sub> 須注意<sub>，</sub>
+如長兄一旦結婚<sub>，</sub> 此局立消 局 自長兄婚之 日 始
+立變為雷天大壯收局 <sub>。</sub></p>
+<p>需卦局所表現的意義如後<sub>：</sub></p>
+<p>一 婚事延後七年 且單歲婚</p>
+<h2 id="壹拾壹">壹拾壹</h2>
+<p>二 如逢八字中 喜慶逢凶 必入宗教或不婚</p>
+<p>三 婚時<sub>，</sub> 妻必為改嫁之人<sub>。</sub></p>
+<p>四 於事業上 必有大成 年少居權位 受重用 進退有據</p>
+<h2 id="六-天水訟">六、天水訟䷅</h2>
+<p>此局令人官司不斷 訴訟纏身 或為好訟之徒 一旦離婚此局方破
+否則你只好改變臥房位置 方可脫離此局之限</p>
+<p>一 官人居此局 升官慢五年 諸事不順 即令不違法 亦受他人連累
+<sub>。</sub></p>
+<p>二 商人居此局 財祿不進 必須興訟方可得財</p>
+<p>三 夫妻婚姻主破 訴訟離婚 此須看命 如命中有 則必成格<sub>；</sub>
+如命中沒有 則不成格</p>
+<p>四 專業人士如醫師 會計師等居此局 千萬須防訟事來臨流年逢之
+同時生人沒事 而你必生事端 運氣不好使然</p>
+<h2 id="七-地水師">七、地水師䷆</h2>
+<p>此局大異其趣 吾人常見潑婦罵街 女人性剛 甚而與人毆打 其局如此 生人如此
+亦為妙矣</p>
+<p>當你發現母親如此<sub>，</sub> 兇暴<sub>，</sub>
+易與人起爭端<sub>，</sub> 仇視外人<sub>，</sub> 其皆由此局產生的
+當須化解 方可平安</p>
+<p>一 對婚事必凶 有妻毆夫之象</p>
+<p>二 事業上 亦不得志 常生糾紛 男命女身</p>
+<p>三 獨來獨往 膽大過人</p>
+<p>四 從商主破婚<sub>，</sub> 得財<sub>，</sub> 尤利虎<sub>、</sub>
+馬<sub>、</sub> 羊三人<sub>，</sub> 其商機<sub>、</sub> 官運亨通
+但婚則凶 各有利弊</p>
+<p>其與同時生之人或雙胞胎大異其趣 各方面皆不同</p>
+<h2 id="八-水地比">八、水地比䷇</h2>
+<p>此卦出現 須長兄為未婚 一旦長兄婚 此局立變為豫卦 須注意變局將如何
+則看長兄之命 何時有婚 知何時生變局 此即陽宅上可見未來之象</p>
+<p>此卦有親比之意<sub>。</sub></p>
+<p>一 性喜從母事 且任勞任怨 家事一手包辦 與母連心</p>
+<p>二 適婚年齡到時 喜歡比 自 己年長於己之女人 如命中
+同時生人為二十八歲婚<sub>，</sub>
+但此局人婚必延後三年到三十一歲才婚<sub>，</sub> 且娶年長於己之女人方合格
+否則婚主破散 不出一年</p>
+<p>三 如命中主破 婚事不成 再居此局 則終身不娶 且與有婚或離婚之女有來往
+終無果也<sub>。</sub></p>
+<p>四 事業上則居佐才之位 無法任職主管</p>
+<p>五 商場上亦為人工作 不為老闆 同時生人有可能為很成功的老闆
+<sub>，</sub> 但命只居三才之三分之一 <sub>，</sub> 運的局影響
+<sub>，</sub> 使其終身不得志 且與同時生人有不同之結果</p>
+<p>唯俟長子成婚後 局方可改變 如長兄居側 或認乾兄 此局</p>
+<p>勢必難變<sub>。</sub></p>
+<h2 id="九-風天小畜">九、風天小畜䷈</h2>
+<p>此卦局 著重於事業 不重於婚姻 凡家有女兒皆易成此局卦局之判讀
+請參閱錄影教學帶 此處不言</p>
+<p>一 女代父職 且能力強過男人 獨立 自 主 不依賴他人</p>
+<p>二 事業企圖心旺盛 早年為老闆 事業有成</p>
+<p>三 婚事方面 須與命同參 如 同時生人為二十八歲婚
+而此陽宅局之人會提前二年結婚 如 同時生人婚姻不成主有婚必破
+此局之人必終身不嫁 全心在事業上發展 成為一女強人<sub>。</sub></p>
+<p>此局大利 肖 羊 馬之人 但即令有婚 夫亦無力助之
+全靠一己之力獨撐大局</p>
+<h2 id="十-天澤履">十、天澤履䷉</h2>
+<p>女人無履 唯男人有之 此局可見男女之本性不同
+女人外似柔弱但一遇進退兩難之時 卻往往比男人果決 男人外似剛強
+但遇險事卻往往躑躅不前 成履卦</p>
+<p>一 事業上常有欲進不得 退之又凶 居進退兩難之局 其事勢如此 而其性亦如此
+其解常靠女人決定之</p>
+<p>二 官運不通 停滯不前</p>
+<p>三 商機不利 運氣不佳 取捨之間 因時機已誤 喪失 良好機會 徒於事懊惱而已
+於事無補</p>
+<p>四 婚事方面 妻能力過於己 故有在外娶妾之行為 以求恢復男人之 自信心
+自尊心 故於婚姻主凶 同時生人如命中婚姻不散則感情破裂 終而同床異夢
+但如命中 主婚姻破裂 再加運上此局 則必主破散無救 此同時生人之不同處
+流年不同之因也</p>
+<h2 id="十一-地天泰">十一、地天泰䷊</h2>
+<p>此名為泰卦 有否極泰來 安泰舒適之象
+每逢有已婚女向本人求教之時<sub>，</sub> 我都以此卦教之<sub>，</sub>
+令改<sub>，</sub> 促進夫妻和睦乃吾道中人之一大職責 此功德無量</p>
+<p>此局大吉 無論於婚姻 事業 健康及教育子女上 都有卓越之表現 為一賢妻
+良母</p>
+<p>一 於婚姻 主一世夫妻 白首到老</p>
+<p>二 於事業<sub>，</sub> 在家相夫教子亦為事業<sub>。</sub>
+在公事上<sub>，</sub> 進退有據<sub>，</sub>受人重用 必不待言
+其心想事成</p>
+<p>三 於健康主平安到老 一生無大病痛 凡未經指點 能得此局之人
+必屬大富大貴之人 福厚之人 一生無災 常見命格好之人 自然居之 真所謂
+「福地福人居」 實不為過 實務上 吾人可見命薄之人 不但無法居此
+即使你告訴她有如此好 而她亦會因外在環境上之束縛 而無法改變 自 己
+不知人與天爭 即在此 禍福在一念之間耳 唯 自 求多福 但希望你真能
+自求而生多福 但須知世事常不盡人意 如能刻意成局之人乃屬有福之人
+其剛柔動靜之間 必能掌握機先 事事快人一步 終必大成</p>
+<h2 id="十二-天地否">十二、天地否䷋</h2>
+<p>惟男人有之 此男女本性之不同 亦可於此卦局窺見之 男人之性過剛於女
+自尊好強之心 又顯現無遺 往往天性上 有欲大力小之性而不 自 知
+不知己之才能如何 妄度不知量進 乃終成否卦 <sub>。</sub></p>
+<p>常見個性如此之人居否局 而不 自 知 仍 自 以為是 故終其一生必無成就 每
+日 只知怨天尤人 嘆時不利己 己不逢時而已</p>
+<p>一 於婚事主大凶 夫妻反 目 成仇 加上命格中如婚破 又在運宅上居此局
+則勢必無法挽回</p>
+<p>二<sub>、</sub> 官家之人<sub>，</sub> 必主否塞不通<sub>，</sub>
+終致無成<sub>，</sub> 不但不升官<sub>，</sub> 反招凶禍 乃致退休</p>
+<p>三 商家人 居此局 必生大耗 財耗家散 終致一敗塗地</p>
+<p>四 健康上亦凶 主大病纏身 如加上命中流年逢羊刃 血光必現
+在數中難逃此大限之局</p>
+<h2 id="十三-天火同人">十三、天火同人䷌</h2>
+<p>此局在陽宅上亦妙不可言 學者切勿分辨錯誤 須仔細分詳以免誤人而不 自
+知</p>
+<p>一 官家人逢之 必主人和 手下得力 祿命九重來 平步青雲 <sub>。</sub></p>
+<p>二 商人逢之<sub>，</sub> 財祿豐盛<sub>，</sub>
+但須二人合夥<sub>，</sub> 方可成事<sub>，</sub>
+一人獨資勢必不成大器<sub>。</sub></p>
+<p>三 自 由業 服務業居此局 必主名氣大 聲名遠播 財祿亨通
+<sub>。</sub></p>
+<p>四 對妻不利 因此局出現 妻必成明夷卦 主妻有暗傷 血光難逃 故不如乾為天
+地天泰吉 即在此 不利妻之處</p>
+<p>吾人常見夫妻一對 夫之事業如 日 中天
+而妻子卻病災不斷必為此局之陽宅也</p>
+<h2 id="十四-火天大有">十四、火天大有䷍</h2>
+<p>吾人常見有未婚之女 嬌美如花 事業上功成名就 但婚姻不好 即此局之人</p>
+<p>一 性陽剛過人 倔強固執本性展現無遺</p>
+<p>二 不重視婚姻 也不在乎婚姻 唯對子女獨有所鐘 有未婚生子之象
+且不在乎人言 且主得二子</p>
+<p>三 如遇命中婚姻順暢 則 比同時生人要早三年成婚</p>
+<p>四<sub>、</sub> 命中事業旺<sub>，</sub> 祖業大之人<sub>，</sub>
+再加上此局 <sub>，</sub> 勢必為女承父業之象 兄弟無力</p>
+<p>肖犬之小姐居此局反之 必主大吉大利 智慧高 婚事吉 事業順利
+婚後有二子雙生之象</p>
+<h2 id="十五-地山謙">十五、地山謙䷎</h2>
+<p>謙卦九三爻位 勞謙 君子有終 有勞謙之美 史上如周公為其代表 常見婦人
+任勞任怨 居無所苦 謙 以讓人 婦之賢德 表現無遺 且始終不變
+即此卦局能成<sub>。</sub></p>
+<p>一 必為賢妻 良母之人無疑 但夫卦為遯 主夫妻不利 感情退化
+所以常見有賢德之婦人 往往盡心盡力為家操心 結果卻無法挽回婚姻之善
+但六十五歲以後不成此局</p>
+<p>二 身體小病痛不斷 因勞成疾多有</p>
+<p>三 官家人逢之 主遇事公平處之 一絲不茍之人<sub>。</sub></p>
+<p>四 商家人得此局 必生財祿 但往往有股東不合
+因分利不均而破壞<sub>。</sub></p>
+<p>五 同時生人 則有官帶現 如命為公職人 但居謙卦局 有民選官之傾向
+商家人亦有此傾向 會居國會殿堂之中</p>
+<h2 id="十六-雷地豫">十六、雷地豫䷏</h2>
+<p>成此卦局之男人 必有因祿遠行之象 大利 肖馬之人</p>
+<p>一 居家中為母助 家事瑣碎 巨細靡遺 有男人能做一手好菜即此局之人</p>
+<p>二 事業財官雙美平步青雲 惟與六親遠離 母有先喪之象</p>
+<p>三 婚姻延後 此同時出生之人晚五年婚</p>
+<p>四 事業上為 良佐之人 任何老闆或主管任用之後 都將得幸</p>
+<p>有此人相助<sub>。</sub></p>
+<p>五 婚事有娶二婚妻之象 或年長於己之小姐</p>
+<h2 id="十七-澤雷隨">十七、澤雷隨䷐</h2>
+<p>此卦現代人最多見 吾人常見街上有女孩 女扮男裝或粗壯過一般女人之小姐
+即此局之人<sub>。</sub></p>
+<p>一 有女同性戀之傾向 其心念一直認為 自 己為男人 且不屑自 己為男人
+且不屑一顧周 圍之男人 喜與女孩同出 同入</p>
+<p>二 全心於事業 為達 目 的不擇手段 有時位高且居天子或董事長之身側</p>
+<p>三 如 同時生人 命 中婚姻吉祥 再加此局勢必嫁入富貴人家 且比同時生人
+早婚四年 如對方不富有 終必散</p>
+<p>故學者如此<sub>，</sub> 必須天文地理合局 <sub>，</sub> 方可確知
+同時生人之不同在何處 同時亦知如何可解 比方遇此卦局之人 命中婚姻又凶
+吾人事先探知 利用巽為風卦 即可解開此局生成之禍端</p>
+<h2 id="十八-山風蠱">十八、山風蠱䷑</h2>
+<p>三蟲聚一盤中 互相爭食 此成蠱象 吾人常見幾位女性同居一桌
+東家長西家短的議論他人 此雖生是非之地 但並非成蠱卦<sub>，</sub>
+此卦在陽宅上惟見之於男人<sub>，</sub> 此又男女之不同 <sub>，</sub>
+女人之蠱<sub>，</sub> 吾人可以立見 男人之蠱在心中
+表面上不易看到<sub>。</sub></p>
+<p>一 此局男人圖利野心至大 為達 目 的 往往不擇手段</p>
+<p>二 主發科甲 讀書考試成績必超人一等</p>
+<p>三 有早婚之象 比同時生人提前四年婚 且二位兄長尚未娶妻 自 己先娶</p>
+<h2 id="十九-地澤臨">十九、地澤臨䷒</h2>
+<p>母居此局 因對象之卦為履 故有難為之象出現<sub>。</sub>
+已婚婦人居此由於夫宮必無力 產生以下數種狀況<sub>：</sub></p>
+<p>一 夫業受困 乃因妻之過剛 為求功心切 招致如此
+請參考履卦<sub>。</sub></p>
+<p>二 妻為委曲求全 而以力大居小 順從於夫可也</p>
+<p>三 子女逢母如此 任何事皆有母來做主 以致母過煩憂
+發展權限過大<sub>，</sub> 終致子女反彈<sub>，</sub>
+背逆其意行事<sub>，</sub> 其招致如此<sub>，</sub>
+乃因母親無安全感<sub>，</sub>
+全心寄託在子女身上而成此特殊之心理狀況<sub>。</sub> 其結果大家痛苦
+而無法解決</p>
+<p>四 肖虎人居此局 婚事凶 主破
+但於事業卻能力爭上游成就非凡<sub>。</sub></p>
+<h2 id="二十-風地觀">二十、風地觀䷓</h2>
+<p>觀卦之精義在 以靜觀可 以洞悉周 圍之事 黃帝之陰符經雲
+<sub>：</sub>「聾者善視<sub>。</sub> 」 即此意 <sub>。</sub> 但亦有缺失
+豈不聞古言<sub>：</sub> 「水至清則無魚 人至明則無徒」 此卦唯長女可見
+婚後局消 <sub>。</sub></p>
+<p>一 其明在過明 而產生以財富論定是否願意嫁人 造成如遇未有事業之男人
+即使再愛也不願結婚 寧可做有錢人的偏房 不婚 <sub>。</sub></p>
+<p>二 如逢命格婚姻有凶 則有嫁二婚夫 且對方有子之人
+但須比同時生人再加六年方成正式婚姻</p>
+<p>三 未婚前 女兒代母職 掌理一家大小之事 有姊如母
+即此局之人<sub>。</sub></p>
+<p>四 如遇命中為僧道命之人 則主終身不嫁</p>
+<h2 id="二十一-火雷噬嗑">二十一 火雷噬嗑䷔</h2>
+<p>成此之局法 請觀錄影帶說明 於此不累述 吾人常見有女孩小時即喜歡咬人
+勸之不聽 乃生噬嗑之象</p>
+<p>一 此女性剛 報復手段常用咬的 平 日 嘮叨不停</p>
+<p>二 婚姻對象為陰柔之男人<sub>。</sub></p>
+<p>三 本身想法動作一如男人 且主少年有成 故常見年輕之影劇圈 出身小姐
+名氣很大 少年得志 都屬此局 <sub>。</sub></p>
+<p>四 婚事延後六年 故同時生人如為二十六歲婚 則此局人加六年
+成為三十二歲婚</p>
+<p>五 事業非常順利 <sub>，</sub> 但如為 肖 雞之女性逢之<sub>，</sub>
+其果必坐吃 山空<sub>，</sub> 吾人常見的有未婚妾成此局 <sub>，</sub>
+也有離婚之女成此局 <sub>，</sub> 但須與寡母同住一起 方成此局 為何如此
+學者須看錄影帶說明</p>
+<h2 id="二十二-山火賁">二十二、山火賁䷕</h2>
+<p>賁卦為求外飾之道 其之於人事 惟男人居此局中成格 諸君試想一位堂堂男子漢
+如果要外飾 其 目 的何在呢？ 因為有真內實之人 其心但求充實 必捨外飾之道
+不會花心思刻意去修飾 君不見真正有錢 有高智慧之人 其外觀往往很零亂
+甚至衣服反穿而不 自 知 其原因在他根本不想花心思在這方面 你有同感嗎？</p>
+<p>一 男身女態之象 性喜誇張矯作之服飾</p>
+<p>二 個性好動 不耐靜守 又剛烈主見強 性易怒</p>
+<p>三 婚姻延後 三十歲以後進退失據 吾人常見空服人員及影劇圈人士居此局
+中而不 自 知</p>
+<p>四 此局 以科 甲 聲名 故利考試 同時生人會考試成績不同 有人名落孫山
+地理之格局影響深遠矣</p>
+<h2 id="二十三-山地剝">二十三、山地剝䷖</h2>
+<p>剝有耗盡之象 有人家財萬貫 但出一子耗盡家財 所謂富不過三代 其因何在？
+有時見三老人 居老人院中 本是安養天年與世無爭 三人結拜兄弟後 長幼有序分列
+此時如剝卦現 則其中一人必散盡三人之財務<sub>，</sub> 終至引 發
+自殺或仇殺事件<sub>，</sub> 其因 皆為財<sub>，</sub>世人但知為財殺
+卻永遠無法深入瞭解 為何貪財如此？ 為何年至古稀 仍無法擺脫財利之惑？
+皆不知卦局之影響 乃能深入人心使當事人蛻變而不 自 知 終致晚節不保
+學者須戒之 一旦發現此局 已成 必極盡人事破壞此局 免生大害 徒呼奈何？</p>
+<p>一 家有剝卦 主耗破家業 倫理喪失 傷風敗俗</p>
+<p>二 性毒暗生 害人而人不知</p>
+<p>三 婚事不成 同時生人即令流年紅鸞星動 亦無法成婚</p>
+<p>四 科甲不順 考試必敗</p>
+<p>五 身體災病多 折損陽壽</p>
+<p>此局大凶 學者須能於事初即可判讀出 必可趨吉避凶 乃至大吉 功德無量
+同道須知 助人於無形 受助人不 自 知 無法察覺到你的功勞 此其功德也 即 陰德
+<sub>。</sub> 今人捐募善款 為窮人洗衣 做飯 只是陽德 並非真功德 聖人治世
+天下百姓 只知平安 無亂 無法感受到聖賢的功勞 庸才治世 天下大亂
+其派人平亂後<sub>，</sub> 人民見此<sub>，</sub>
+即認定其功勞很大<sub>，</sub> 所以本書之出世<sub>，</sub>
+有警世教民之無知功效 同道共勉之</p>
+<h2 id="二十四-地雷復">二十四、地雷復䷗</h2>
+<p>吾人常見已婚之婦人 婚事不佳 獨立支撐家運 允文允武屬木蘭型之人
+必為復卦之局</p>
+<p>一 有女身男人性格之徵<sub>。</sub></p>
+<p>二 此卦局尤利發武官 即軍 警 法 外交等工作之人<sub>。</sub></p>
+<p>三 代夫出征 絲毫不讓鬚眉</p>
+<p>四 此局發官人 不發商人 尤以 肖虎 兔人大吉 更旺</p>
+<p>五 與夫之對應局為無妄卦 故夫妻必不和 其因乃生於妻志過丈夫
+丈夫無法與其匹配 屋漏偏逢連夜雨 加上夫有官司是非纏身
+所以對婚姻來說是加凶</p>
+<h2 id="二十五-天雷無妄">二十五、天雷無妄䷘</h2>
+<p>此名無妄 猶無妄之災意 居此局之丈夫成此格 即令已離婚但有子女同住
+只要象存在 其局不變 須注意此點</p>
+<p>一 必須為從商較吉<sub>，</sub> 但須防陰人暗客<sub>，</sub>
+有得財遇險之象<sub>，</sub> 肖豬肖 鼠人成格 主大財入 但皆有陰謀其中</p>
+<p>二 如為公職人 則易流於利慾而挺身走險</p>
+<p>三 求財招險事 住滿第二年 局再不動 必見之</p>
+<p>四 性剛固執 不聽人言 故生小人 自 亂陣腳</p>
+<p>五 須防子災<sub>，</sub> 故同時生人<sub>，</sub>
+有人無子<sub>，</sub> 有人有子<sub>，</sub> 但主夭折或叛逆 此其真因也
+因強住長子位 致令長子無宮位 故生禍害 <sub>。</sub></p>
+<h2 id="二十六-山天大畜">二十六、山天大畜䷙</h2>
+<p>君不見有子為家不顧一切的工作 處處為家著想 甚至放棄婚事亦在所不惜
+固然此象不一定在三子身上發生 但大畜卦必現於三子身上<sub>。</sub></p>
+<p>一 代父之職守 負擔一家之生計</p>
+<p>二 節儉至矣 絕不招待花錢買奢侈品 故頗有積蓄</p>
+<p>三 有婚也短暫 必不足三月 而破 比 同時生人提前二年結婚
+<sub>。</sub></p>
+<p>四 此局不利公職發展 必困於工作 堆積公文如山</p>
+<p>人言有積乃大 誠不欺人也 許多人在婚前極盡節儉
+往往婚後無法忍受妻子之奢侈浪費 終致離婚 故積的觀念產生在 自 己身上而不
+自覺 乃致婚後 硬要加諸於對方身上 終於破裂 吾人當於始時 即 已察覺知曉
+方不愧為習 易之人</p>
+<h2 id="二十七-山雷頤">二十七、山雷頤䷚</h2>
+<p>頤有飲食養身之意 如何養人？ 如何養正？ 如何知養之正確與否？
+何時可養？ 這些零碎復雜的問題 如要一一解釋
+不一定全部都能知道瞭解<sub>，</sub> 八卦之入宅變局 <sub>，</sub> 就是取
+自 然頤養之道<sub>，</sub> 使萌生之始念<sub>，</sub> 由
+己之所需要<sub>，</sub> 人之性在其認為極需要之時<sub>，</sub>
+你提供所需方可真正受用 如果他本身不想要
+即令是你的親人也無法改變他只造成熱臉貼到冷屁股的結果<sub>。</sub>
+故吾人能參透易經 用 陽宅方式自然而然的大幅改變 其本人而不 自 知
+相信是最有效的方法<sub>。</sub> 此卦現則可見<sub>：</sub></p>
+<p>一 少年得志<sub>，</sub> 早來興發之象<sub>。</sub></p>
+<p>二 身體健康平安 故同時生人如身體差 吾人可利用此局來化解 協助他吸取
+自然之精華 並能包含其情緒在內</p>
+<p>三 婚姻當較同時生人提前五年 有早婚之傾向</p>
+<p>四 如不經吾同道之人指點 （屬 易派象術宗 ） 自 然居此
+有時甚至於為其他風水地理師所改 皆主同父異母之人 反觀之 為同父異母之人
+卻居此局 中 屢見不鮮</p>
+<h2 id="二十八-澤風大過">二十八 澤風大過䷛</h2>
+<p>大過之卦 於人事上分二解 一為犯下大過 二為立下大過於常人之功 地脈道
+比較偏狹 往往見到小妹最早嫁人 也嫁的最好 必為此卦 至於何時為大過
+如何用大過之道 其進退之機讀者可參看人間道部份 此不詳述</p>
+<p>一 比同時生人早婚三年 且嫁夫有長十歲以上之狀況</p>
+<p>二 身進豪門世家 享盡榮華富貴</p>
+<p>三 性過剛 任意而為 婚前婚後都一樣</p>
+<p>四 如婚之對象 年紀相近 必主凶 易破</p>
+<h2 id="二十九-坎為水">二十九、坎為水䷜</h2>
+<p>本坎卦有險之象 位居正北 羅經上是子位 吾人常見四合院宅式 皆坐北 向南
+入宅後 以 中 心點為準 其正北宮常設祖先牌位 神明所在或大廳所在 不居人
+其因就是此位有險 故以神明續之 今人不知 無意之間此局現 則成次子格
+可以發現<sub>：</sub></p>
+<p>一 兒子喜歡 冒 險 諸如賭博 毒 品等舉凡驚險刺激都有興趣
+<sub>。</sub></p>
+<p>二 唯 肖虎 肖 牛人住吉</p>
+<p>三 如此子肖 鼠 又成此局 則暗中生害 為禍家人
+母親必首當其衝<sub>。</sub></p>
+<p>四 婚姻較同時生人 延後二年</p>
+<p>五 此格之人 常犯官司 牢獄之災</p>
+<p>解此局惟水火既濟卦可成 可令其脫胎換骨</p>
+<h2 id="三十-離為火">三十、離為火䷝</h2>
+<p>此局常見 離卦本示人中虛為明 今人但以為 自 己很明 其實一直都沒進步
+屢錯不改 茫然不知 皆肇因於不明 易經提出之中虛為明 就是隨時把 自
+己變成空杯子 那才可 以真明 <sub>。</sub> 家 中有女 天生好手 明事理
+知進退 必為此局 讀者須注意要知利用此局方是<sub>，</sub> 不知運用
+<sub>，</sub> 空言易經<sub>，</sub> 吾所不恥<sub>。</sub></p>
+<p>一 此女必心在遷移外地 不喜在本地</p>
+<p>二 命格上如二十八歲婚 則宅局如此 必然不 出 二十八歲婚
+<sub>。</sub></p>
+<p>三 天生明理而不懼</p>
+<p>四 不守財祿 不重利之人</p>
+<p>五 科甲高中 往往都是第一志願</p>
+<h2 id="三十一-澤山鹹">三十一、澤山鹹䷞</h2>
+<p>此卦局過去常見 今人不多 但讀者亦明瞭 其變化如後</p>
+<p>一 婚成於媒妁之言 並非 自 由戀愛</p>
+<p>二 婚事先成後破 凶</p>
+<p>三 對象必為豪門世家 比同時生人早一年婚 逢單歲婚</p>
+<p>四 財祿事業順利 工作野心大 但科甲不興</p>
+<h2 id="三十二-雷風恒">三十二、雷風恒䷟</h2>
+<p>今人最常見此局 化解局式 如雷地豫卦等都吉</p>
+<p>一 易從宗教信仰 但不是正道之宗教</p>
+<p>二 比同時生人晚婚一年<sub>。</sub></p>
+<p>三 智慧被壓抑 常不知取捨 失去堅持</p>
+<p>四 肖 鼠人有吉 陰謀不生<sub>。</sub></p>
+<p>五 官運不佳 商場不順 惟科甲 旺 利教職 自 由業人</p>
+<h2 id="三十三-天山遯">三十三、天山遯䷠</h2>
+<p>吾人常見一家之主終 日 唉聲嘆氣<sub>，</sub> 中年即無斡勁<sub>，</sub>
+且工作上付出勞力很多 卻往往功給他人 仕途原地踏步 毫無進展
+必為此卦而所約束也</p>
+<p>一 萌生退意 肇因於該升不升 有無力感</p>
+<p>二 夫妻感情退化 終致離婚</p>
+<p>三 事事回歸原地 必須重新出發</p>
+<p>四 身體亦有退化現象 中年即得老年病</p>
+<h2 id="三十四-雷天大壯">三十四、雷天大壯䷡</h2>
+<p>此卦局也常見不鮮 吾人須知何局為大壯局 如何利用大壯</p>
+<p>局 何時可用大壯為最利 何時須離開此局</p>
+<p>一 性剛為一家之主 有越居父位之象<sub>。</sub></p>
+<p>二 家庭責任感重<sub>。</sub></p>
+<p>三 不婚 與同時生人不同</p>
+<p>四 如有婚 必為猴 兔 犬三 肖 屬之人 但常不足三月 婚破
+<sub>。</sub></p>
+<p>五 事業獨立 自主 自 由業人可為一方之主 聲名遠播</p>
+<h2 id="三十五-火地晉">三十五、火地晉䷢</h2>
+<p>此局之現<sub>，</sub> 讀者可以立判出 <sub>。</sub></p>
+<p>一 性柔有母愛之人<sub>。</sub></p>
+<p>二 婚姻常晚 約四十歲以後</p>
+<p>三 守財不花<sub>，</sub> 性極節省之人<sub>。</sub></p>
+<p>四 偏房之人 同時生人有婚為正房</p>
+<p>五 婚嫁對象若 肖 雞 則大吉 但大年長多多</p>
+<h2 id="三十六-地火明夷">三十六、地火明夷䷣</h2>
+<p>此卦很凶 宅局逢之 必主母先亡 且生前血光連年 希讀者遇之必力求其變局
+<sub>，</sub> 功德無量<sub>，</sub> 人不知其功<sub>，</sub>
+乃所謂陰德也<sub>。</sub></p>
+<p>一 妻生隱疾不好告人<sub>。</sub></p>
+<p>二 破財且諸事不順</p>
+<p>三 易受小人言 招人暗害</p>
+<p>四 一旦見血光<sub>，</sub> 必終致凶 <sub>。</sub></p>
+<p>五 唯肖虎人 可平安渡過</p>
+<h2 id="三十七-風火家人">三十七、風火家人䷤</h2>
+<p>今 日 常見之卦局 讀者可知如後<sub>：</sub></p>
+<p>一 從官職必無法升職</p>
+<p>二<sub>、</sub> 科甲功名無慮<sub>。</sub></p>
+<p>三 婚延後五年與同時生人不同 <sub>。</sub></p>
+<p>四 與家人相處和睦 且非常顧家</p>
+<p>五<sub>、</sub> 多婦人病<sub>。</sub></p>
+<h2 id="三十八-火澤睽">三十八、火澤睽䷥</h2>
+<p>我們常見有小女孩 背離家人 自顧 自 私 使父母深為苦惱而無法改變
+只有任其任性而為 終致一生皆凶 坎坷 實因 自 內生 <sub>。</sub></p>
+<p>一 性剛僻倔強 任性胡鬧 以致家無法容</p>
+<p>二 肖 牛 肖 鼠人見之 更凶</p>
+<p>三 科甲不興<sub>。</sub></p>
+<p>四<sub>、</sub> 婚姻不成<sub>。</sub></p>
+<p>五 招凶事 官司 災禍連連</p>
+<p>六 有同性戀傾向</p>
+<h2 id="三十九-水山蹇">三十九、水山蹇䷦</h2>
+<p>此局利從武官之人 如軍人 員警 外交 司法人員等
+也可以刻意佈出此局如果你想兒子從此類公職的話</p>
+<p>一 求財亨通 且無功利之心</p>
+<p>二 官調他鄉 與六親遠離</p>
+<p>三 婚姻較同時生人延後七年</p>
+<p>四 科甲吉 故考試資格必順心</p>
+<p>五 獨 自 發展亦特立獨行也</p>
+<h2 id="四十-雷水解">四十、雷水解䷧</h2>
+<p>此卦局常見 也相當特殊<sub>：</sub></p>
+<p>一<sub>、</sub> 為性剛武勇之人<sub>。</sub></p>
+<p>二 總是官司是非不斷<sub>。</sub></p>
+<p>三<sub>、</sub> 無婚<sub>。</sub></p>
+<p>四 肖 兔人 劉姓人 柳姓人 主凶</p>
+<p>五 出家為唯一可解之人事手段</p>
+<h2 id="四十一-山澤損">四十一 山澤損䷨</h2>
+<p>損局在陽宅上造成兒子問題多多 父母總是煩心擔憂</p>
+<p>一 與同時生人 婚事延後一年方成 對方同一人</p>
+<p>二 官運不通 所求不成</p>
+<p>三 性喜求樂 不求進步 須經二次大災 方能悟</p>
+<p>四 對家庭態度 只會花錢 不會賺錢 無所事事</p>
+<h2 id="四十二-風雷益">四十二、風雷益䷩</h2>
+<p>一 長女之婚事不成 或成後又破</p>
+<p>二 財祿足 有祖業 工作則又過於男性</p>
+<p>三 女身男性 貴人為男人 小人為女子</p>
+<p>四 從官運則吉 切不可貪祿 主兇</p>
+<h2 id="四十三-澤天夬">四十三、澤天夬䷪</h2>
+<p>一<sub>、</sub> 婚事延宕不成<sub>。</sub></p>
+<p>二 性剛從武 性柔從宗教 吾人可從八字中看出</p>
+<p>三 事業先主兇後吉 主 自行發展</p>
+<p>四 科甲不興<sub>。</sub></p>
+<p>五 身體健康差 不長壽 三十歲前有兇險</p>
+<h2 id="四十四-天風姤">四十四、天風姤䷫</h2>
+<p>吾人常見丈夫在外風流多事 桃花運不斷 就是此局生成</p>
+<p>一 商人財祿豐盛 只 旺六年 須注意假像</p>
+<p>二<sub>、</sub> 官司受牽連<sub>，</sub>
+同時生人可能沒事<sub>。</sub></p>
+<p>三<sub>、</sub> 外有妾及多位女友<sub>。</sub></p>
+<p>四 夫妻失和 如命中屬二婚命 則必破</p>
+<p>五 官家人亦吉前六年 第七年以後必兇</p>
+<h2 id="四十五-澤地萃">四十五、澤地萃䷬</h2>
+<p>較不多見<sub>，</sub> 但亦有之<sub>。</sub></p>
+<p>一 女兒不想成婚 對異性沒興趣</p>
+<p>二 終 日進德修業</p>
+<p>三 退居家內 代母行職 為 良母型之人</p>
+<p>四 如從事餐飲業則大利 為唯一帶喜之路</p>
+<h2 id="四十六-地風升">四十六、地風升䷭</h2>
+<p>其為姤卦之對應卦 在地脈道之屢見不鮮
+學者當已嫻熟於卦局之變化<sub>，</sub> 立可知曉<sub>。</sub></p>
+<p>一 官職大利 平步青雲</p>
+<p>二 事業財祿豐盛</p>
+<p>三 能承繼祖業 更新門面</p>
+<p>四 夫妻有競爭 不和之象<sub>。</sub></p>
+<p>五 此局不變 婚姻進入第七年必有兇 同時生人不一定會發生
+故陽宅影響一人至大 而人們卻茫然不知</p>
+<h2 id="四十七-澤水困">四十七、澤水困䷮</h2>
+<p>困之於人大矣 吾道人士能為眾生解開此局 亦無量功德也</p>
+<p>一 體弱多病 限不過三十歲<sub>。</sub></p>
+<p>二 性剛烈 獨行獨斷</p>
+<p>三 婚事不成 多有阻滯</p>
+<p>四 財祿不守 只有一線生機 故從商必兇</p>
+<p>解之唯大過可也<sub>。</sub></p>
+<h2 id="四十八-水風井">四十八、水風井䷯</h2>
+<p>一 婚事娶二婚妻 且妻長</p>
+<p>二 心志不堅 受外在誘惑 無法 自拔</p>
+<p>三 從商吉 有祖業更吉</p>
+<p>四 從官招陷 是非不斷 升遷受阻</p>
+<h2 id="四十九-澤火革">四十九、澤火革䷰</h2>
+<p>一 此女天生剛勇 且明事理<sub>。</sub></p>
+<p>二 感情困擾多 <sub>。</sub></p>
+<p>三<sub>、</sub> 婚姻比同時生人早二年<sub>，</sub>
+且比姊早婚<sub>。</sub></p>
+<h2 id="五十-火風鼎">五十、火風鼎䷱</h2>
+<p>此局最利未婚小姐 我常利用此局助人無數</p>
+<p>一<sub>、</sub> 其必嫁貴夫<sub>。</sub></p>
+<p>二<sub>、</sub> 果決剛斷<sub>，</sub> 不易受惑<sub>。</sub></p>
+<p>三<sub>、</sub> 婚比姊早婚<sub>，</sub> 且冬天方成<sub>。</sub></p>
+<p>四 官運亨通 財不利</p>
+<p>五 鼠生人凶 不吉<sub>。</sub></p>
+<p>六 科甲吉 考試順利</p>
+<h2 id="五十一-震為雷">五十一、震為雷䷲</h2>
+<p>生局之中 此局很特殊 未經吾派之人改 自 然居此局 中人其必天生好手
+在家為貴子無疑</p>
+<p>一 有承繼祖業 發揚光大之實力</p>
+<p>二 科甲興旺 名列前茅</p>
+<p>三 官運通順 只 限未婚前</p>
+<p>四 從商亦吉<sub>，</sub> 但須為負責人<sub>。</sub></p>
+<p>五 婚姻按命中走 紅鸞星動之年 即成婚之年</p>
+<p>六 須注意此局只現在婚前 婚後必不見
+惟天卦可繼續其運勢<sub>。</sub></p>
+<h2 id="五十二-艮為山">五十二、艮為山䷳</h2>
+<p>一 科甲順利<sub>，</sub> 必 中理想之學校<sub>。</sub></p>
+<p>二 健康平安 為孝子</p>
+<p>三 婚姻順利 進入八字中紅鸞星之年必婚</p>
+<p>四<sub>、</sub> 公職大利<sub>。</sub></p>
+<p>五 知進退 為天生受人喜歡之人</p>
+<h2 id="五十三-風山漸">五十三、風山漸䷴</h2>
+<p>一 科甲不順 缺臨門一腳<sub>。</sub></p>
+<p>二 工作心念不定 常思變動</p>
+<p>三 身體平安 災少</p>
+<p>四 對婚姻不采主動 婚事難成</p>
+<p>五 出任公 教職大利</p>
+<p>此局變化多 隨時成之故學者須注意</p>
+<h2 id="五十四-雷澤歸妹">五十四 雷澤歸妹䷵</h2>
+<p>現代人為愛滋病所苦 目 前醫學界雖仍無法認定其必 由 同性戀傳染來的
+我也不否定其是否正確 但可以肯定的是 其行為必不為父母所能接受的
+此局無人發現 自 古以來因道德束縛力很強家族同住<sub>，</sub>
+故較不易發生<sub>，</sub> 史有明載其斷袖之癖即言同性戀<sub>，</sub>
+但不似今 日 之普遍 世界各國 皆為此苦惱不已
+其實易經中早已明確指出其從何而來？ 為何有人如此 有人不苟同 ？ 如何化解？
+男 同性戀出歸妹卦 女同性戀出益卦 旅卦 漸卦 鼎卦等變化較多
+其化解只須正位即可改變<sub>。</sub></p>
+<p>一 男 同性戀 父母煩憂 終致離家出走</p>
+<p>二<sub>、</sub> 委曲 以求祿<sub>。</sub></p>
+<p>三<sub>、</sub> 無婚<sub>。</sub></p>
+<p>四 諸事不順 但多才多藝 走藝術路線佳</p>
+<h2 id="五十五-雷火豐">五十五、雷火豐䷶</h2>
+<p>此卦常出現在兒子身上</p>
+<p>一 未經本派之人指點 乃 自 然居此局 中之人 其與同時生人不同
+婚事必先成後破<sub>。</sub></p>
+<p>二<sub>、</sub> 科甲考試順利 <sub>。</sub></p>
+<p>三 性剛且堅 易與人爭 必為感情困擾</p>
+<p>四 從商必破財</p>
+<p>五 從官職吉</p>
+<h2 id="五十六-火山旅">五十六、火山旅䷷</h2>
+<p>此局特殊 學者須識</p>
+<p>一<sub>、</sub> 科甲興旺</p>
+<p>二<sub>、</sub> 女身男態</p>
+<p>三 婚事不成 須逢肖 羊 肖 猴或于未 申之年方有成</p>
+<p>四<sub>、</sub> 城府較深<sub>，</sub> 終 自取咎<sub>。</sub></p>
+<h2 id="五十七-巽為風">五十七、巽為風䷸</h2>
+<p>此局大利未婚女<sub>，</sub> 吾每逢有未婚小姐來求教<sub>，</sub>
+都不厭其煩的希望他能住在此局中 必主婚姻幸福</p>
+<p>一 科甲興旺 考試必 中</p>
+<p>二 逢凶化吉 災事不興</p>
+<p>三 婚姻必能嫁好夫婿 逢紅鸞即動</p>
+<p>四 性情穩定<sub>，</sub> 處憂不懼<sub>。</sub></p>
+<p>五<sub>、</sub> 健康平安之人<sub>。</sub></p>
+<h2 id="五十八-兌為澤">五十八、兌為澤䷹</h2>
+<p>一 求婚事必不成 感情複雜又專一不二 如遇虎狼之人必</p>
+<p>傷害甚大<sub>。</sub></p>
+<p>二 有待婚中 夫凶之象 婚比同時生人 延後三年<sub>。</sub></p>
+<p>三 科甲順暢 多才藝之女<sub>。</sub></p>
+<p>四 公職順遂 但從商必主不利</p>
+<p>五 體健無災 母蔭重 有無父之虞</p>
+<h2 id="五十九-風水渙">五十九、風水渙䷺</h2>
+<p>渙局亦常見之 吾人利用風卦可立解</p>
+<p>一 心在宗教 不想結婚 但易入邪道<sub>。</sub></p>
+<p>二<sub>、</sub> 心中有鬼<sub>，</sub> 諸事不成<sub>。</sub></p>
+<p>三 禍事連連 官非牢獄災難免</p>
+<p>四 出家化解災厄 母親終 日 擔憂</p>
+<h2 id="六十-水澤節">六十、水澤節䷻</h2>
+<p>一 本人肖雞 則必大貴</p>
+<p>二 本人 肖犬 則 以小做大 招 自 陷</p>
+<p>三 財無積餘 行險招兇</p>
+<p>婚事不成 犬人遇雞則成 妻長一歲 與同時生人不同 且妻主大貴<sub>，</sub>
+助夫渡厄<sub>。</sub></p>
+<h2 id="六十一-風澤中孚">六十一、風澤中孚䷼</h2>
+<p>有女每試必為狀元 即生此局之人</p>
+<p>一 科甲狀元 每考必中</p>
+<p>二 武職大利 女中豪傑 今見有女司法官如此</p>
+<p>三 雙喜同臨 常在婚姻中伴之而來金榜登科</p>
+<p>四 喜事初不成 家 中不 同意 後成 但與 同時生人延後三年
+<sub>。</sub></p>
+<h2 id="六十二-雷山小過">六十二、雷山小過䷽</h2>
+<p>此局很多 吾人常不 自 知陷於局 中</p>
+<p>一 感情困擾 擺脫不了情關 為情不顧一切 此小人也</p>
+<p>二 肖猴 候姓人不忌<sub>。</sub></p>
+<p>三 無法工作 神魂顛倒 <sub>。</sub></p>
+<p>四 常過失傷人 故婚事不成</p>
+<h2 id="六十三-水火既濟">六十三、水火既濟䷾</h2>
+<p>此局吾常用於化解困卦之局</p>
+<p>一 不重財貨 天性如此</p>
+<p>二 官運人吉 從商亦得財 故財官雙美</p>
+<p>三<sub>、</sub> 科甲亦吉<sub>，</sub> 利考試<sub>。</sub></p>
+<p>四 先有子 後有婚 如加上命中有妾 則必主正房一子
+偏房一子<sub>。</sub></p>
+<p>五 婚姻會比同時生人慢八年 也常先有妾後有婚</p>
+<p>故吾人知如此 常俟事業安定後 用雷卦化解婚姻問題</p>
+<h2 id="六十四-水火未濟">六十四、水火未濟䷿</h2>
+<p>一 女身男態 性剛易怒</p>
+<p>二 肖虎女子 必枯坐無成<sub>。</sub></p>
+<p>三 劉 宋 高等姓人從武吉</p>
+<p>四 婚事必不成 與同時生人婚時不同</p>
+<p>五 從商求財是非多 甚而官司 爭執不下</p>
+<p>陽宅之局演繹到此 暫告一段落 下篇風不水篇
+其中吾人已將古來很複雜之理論簡化後 並用 易來解釋計算 學者必能極易 明瞭
+加上錄影帶之說明 必可一羅經在手 即堪天與地去也<sub>。</sub></p>
+<h2 id="導言">導言</h2>
+<p>我們中國人 注重慎終追遠 祭祀祖先為孝道之一
+祖先們遺留下來很寶貴的風水經驗<sub>，</sub> 今人已漸就淡忘<sub>，</sub>
+殊不知 自 古 以來此風水之學 不但只是用在陰宅之安葬 使後代子孫興旺上
+更用在兵法上<sub>，</sub> 地形篇多有論及<sub>，</sub>
+如誤犯之<sub>，</sub> 乃兵家大忌<sub>，</sub> 生死關頭<sub>，</sub>
+一念之間 天地反覆 陰符經雲 <sup>‘</sup>天髮殺機 龍蛇起陸 人髮殺機
+天地反覆 <sup>’</sup> 我舉一些簡單的例子 給學者參考 姜太公雲
+<sup>‘</sup>法天結營 外物不能侵害 <sup>’</sup> 其要求手下出軍征戰
+安營下寨 必要佈列軍陣<sub>，</sub> 有幾個法門不可違反<sub>。</sub></p>
+<p>將帥領導者 居九天之上 即東方青龍位 定好之後 十 日之後 再開牙門
+即軍營大門 常背建向破 建為北斗七星之柄向破即破敵陣地 不飲死水 不居死地
+即後無退路之局 中 不居地柱 即在地形上 四邊窪 中 間高之地形<sub>；</sub>
+不居地獄 即 四周高中 間窪之地形 不在天灶休息 即 山谷之 口 不在龍首 即
+山落入平地 風水上為結穴之首部 皆不安營下寨</p>
+<p>所 以統帥在 「 青龍 」 位 軍令施放在 「 蓬星 」 位 士卒居「 明堂」
+之位 伏兵埋在 「太陰」 之位 軍營大門安置在 「天門 」位 小將居 「地戶 」
+之位 規定軍法在 「天獄」 位 「天庭」 位為判處犯人位 軍糧存放在 「天牢」
+之位 軍器存放在 「天藏」 位</p>
+<p>有記載其按十二地支位 結營 即子為青龍位 醜屬蓬星寅為 明堂
+<sub>，</sub> 卯為太陰<sub>，</sub> 辰為天門 <sub>，</sub> 巳為地戶
+<sub>，</sub> 午為天獄<sub>，</sub> 未為天庭<sub>，</sub>
+申為天牢<sub>，</sub> 酉為天藏<sub>，</sub> 其實諸君試想<sub>，</sub>
+如果固定一成不變<sub>，</sub> 那敵人必瞭如指掌<sub>，</sub>
+一舉一動皆為敵人所悉<sub>，</sub> 豈可打勝仗<sub>，</sub>
+故此都須視地形地物來做一合理安排 使部隊能靜如泰山 動如脫兔般敏捷
+方可致勝<sub>。</sub></p>
+<p>孫子教戰第六篇亦有提到大戰之法 左校在青龍位 右校在白虎位 前校在朱雀位
+後校在玄武位 中校在軒轅位 而主帥所在位 左有劍鋒 右有長戟 前有盾 甲 後有
+弓弩 中有旗鼓 軍士聽到鼓就進軍 聽到鳴金就收兵 部隊隨金鼓的指揮而動
+這也是與中國之堪輿學很有關連的 <sub>。</sub></p>
+<p>現在世上人 口 眾多 死人與活人爭地 一位 已難求 如再要求一龍穴安葬祖先
+勢如登天之難 故吾人研習堪輿學 要知曉變通 不可固執於既成之法
+食古不化才是<sub>。</sub> 故本人風水篇除了介紹一些標準的風水格局
+再就一些必須有的禁忌來說明 研習之務必要能活用不可一成不變的 就如
+同易經中論象 只有一次的象 永遠不會再有第二次相 同 的格局出現
+故必須心領神會 方可從中求變 要知道 在智慧的領域中是十分活潑的
+讀者必須很奔放的去思考 切不可犯下 學而不思 或思而不學的求知大忌
+必須很謙虛的抱持著學而後思的求知精神 方可大成<sub>。</sub></p>
+<h2 id="風水篇">風水篇</h2>
+<p>我們此篇分三部份 第一部份是制式格局 第二部份是運用法則的活用
+<sub>。</sub> 制式格局 的部份我們可以瞭解到古人的審慎<sub>，</sub>
+此部份我刪減了許多添油加醋的誇張部份 將以很平實的理論來探討 運用法則活用
+的部份<sub>，</sub> 我用很平易近人又不違反古制的方式<sub>，</sub>
+使學者能在任何一處運用得當 較不受外在的不可變因素來影響<sub>。</sub></p>
+<h2 id="一-制式格局">（一）制式格局</h2>
+<p>在諸君研究之間 我先把風水上的專有名詞作一定義 使學者不為名詞所困惑 一
+龍<sub>：</sub> 在風水上 山脈連綿不斷
+由於整個山脈之起伏就活生生的像一條龍的背脊 所以吾人喝之為龍 所以龍就是
+山 脈 <sub>。</sub> <sup>‘</sup> 龍 <sup>’</sup> 又分 <sup>‘</sup> 來龍
+<sup>’</sup> <sub>、</sub> <sup>‘</sup> 去龍 <sup>’</sup> <sub>、</sub>
+<sup>‘</sup> 生龍 <sup>’</sup> <sub>、</sub> <sup>‘</sup> 死龍<sup>’
+‘</sup> 陽龍 <sup>’ ‘</sup> 陰龍 <sup>’</sup> 等不同名詞
+所謂<sub>：</sub> <sup>‘</sup>來龍 <sup>’</sup> <sub>：</sub> 山
+由高向低處下降<sub>，</sub> 吾人站在低處高處山之稜線看<sub>，</sub> 此即
+<sup>‘</sup>來龍<sup>’</sup> <sub>，</sub> 反之即
+<sup>‘</sup>去龍<sup>’</sup> 山脈最高最遠的部份吾人稱為始祖山 到了
+比較稍低的地方 可稱為少祖山 而後再續降低為山龍 例如 張
+良在赤霆經中提到蔥領之巔 昆侖山 部份為 中 國之始祖山 而後延伸 出 北龍
+南龍的一些山脈 就名為少祖山 以臺灣為例 從大陸的始祖山
+連延南龍山脊直到香港為南龍尾 入臺灣海峽 此龍未斷 在臺灣出水<sub>，</sub>
+又以 中央山脈為少祖山 <sub>，</sub> 此南龍結穴在臺北盆地<sub>。</sub>
+風水家認為在清朝以前 中 國之氣運走在北龍 所以中 國文化發祥地在北方
+直到北龍的尾端進入長 白 山而入黃海 所以 中國最後一王朝來
+自東北<sub>，</sub> 結束王朝後<sub>，</sub>
+氣運早已進入南龍<sub>，</sub> 所以國父孫中 山為廣東中 山人士 屬南方人
+因正值發南龍之氣運 所以能推翻滿清建立民國 自此以後必 由南方人來統治中國
+但因北龍氣運到了盡頭 氣運轉向 中原 而與兩龍之始運沖撃 所以在競爭之下
+才有群雄割據 無知的地方軍閥 也能暫時的展頭露角 在歷史舞臺上占一席之地
+南龍的入海處正是香港所在 故香港受到中 國南龍氣運的影響<sub>，</sub>
+為一興發之地<sub>。</sub> 但因龍脈是過而不留<sub>，</sub>
+所以在風水家眼中 <sub>，</sub> 連九七香港大限亦是氣數之中
+已定<sub>，</sub> 真正南龍的氣運必發在臺灣
+至於臺灣氣運容後詳述<sub>。</sub></p>
+<p>二 水<sub>：</sub> 中 國風水上對水非常講究 水之勢要平且緩
+要清澈不要汙濁 要無聲不要有聲 要曲 曲折折 不要筆直進出 水的規矩很多
+不外乎 以上數種 至於如何用 羅經測水 其又分如八路黃泉等 後有介紹</p>
+<p>三 明堂<sub>：</sub> 在山脈進入平地以後 展現出一平原
+此即風水家所謂之明堂 例如 臺北盆地即為中央山脈之明堂 此由大處看
+小處可見家宅之門前庭院是明堂</p>
+<p>四 案山 <sub>：</sub> 在明堂前如有近距離的山 即是案山 臺北圓山等</p>
+<p>五 朝山 <sub>：</sub> 在明堂之外 遠遠來朝的山 即名朝山 以臺北盆地來說
+觀音山 即是臺北盆地的朝山</p>
+<p>六 水 口 <sub>：</sub> 兩水交會於此 然後匯成一大河 此處即名水 口</p>
+<p>七<sub>、</sub> 水 口砂<sub>：</sub> 在水 口 兩側磐據的大石頭或小 山
+<sub>，</sub> 即名為水 口砂<sub>，</sub> 如在明堂外之水中大石或小山坵
+即為砂 而砂又以動物象為最優且須像虎 獅 象 猴 牛等威猛靈活穩重之砂為佳
+如果是陰暗晦藏之動物 如 鼠 蛇 蟻等 即稱之兇砂</p>
+<p>八 青龍<sub>：</sub> 吾人背向來龍 左側如抱之山 即是青龍位
+不一定左側必為東方 學者須注意</p>
+<p>九 白虎 <sub>：</sub> 吾人背 向來龍 右側聳立之山 即名 白虎
+不一定在正西 只是風水一名詞而已 不要太強求</p>
+<p>十一<sub>、</sub> 官星<sub>：</sub> 在來龍與青龍 白虎二邊所環抱在
+內側<sub>，</sub> 如發現有山之枝腳或小坵 即為官星</p>
+<p>十二 鬼星<sub>：</sub> 在來龍與青龍 白虎交接的後外方
+有延伸之山腳或小山坵 即為鬼星</p>
+<p>十三 結穴<sub>：</sub> 其實所謂 「結穴」 即上古時代 火山噴出之 口
+如在山頂 則為天池 口 如東北長 白 山之天池 台灣之 日 月 潭等
+但在山脈進入平地後亦有小的噴 口 即風水之龍的結穴所在</p>
+<h2 id="一-如何分辨-龍">（一）如何分辨 「龍」</h2>
+<p>風水家所謂 「生龍」 就是山勢雄偉高大 青蒼茂盛之山形有生氣蓬勃的外形
+看了令人神清氣爽 精神振奮的感覺 而且綿延不斷 即是有情之龍
+如是從太祖山到少祖山一路下來沒有斷脈（ 山稜線） 連續下來
+此種龍脈發力必然悠久長遠 延著龍脈去向一旦發現此山脈穿越兩大 山 之間 被兩
+山夾著 山稜線 此即所謂「龍過峽」 只要看到此種景象 則必知前有結穴
+這就是所謂的尋龍法<sub>。</sub></p>
+<p>俟龍脈進入一結地 有時為一山 窪 有時為一平原 來龍壯大的其結穴必大
+有時此穴之明堂可能伸長數百里 小的龍穴 明堂也小<sub>，</sub>
+例如臺北盆地<sub>，</sub> 整個盆地就是中央山脈來龍明堂所在<sub>，</sub>
+其龍勢壯大 故必為國都所在 小的結穴地 可以安置陽宅或陰宅 其實說穿了
+尋龍法就是古代祖先為尋找一安身之地適人居住 並可繁衍子孫 沒有病痛
+物產豐富 天然災害最少 的地方的一種方法 <sub>。</sub> 如 果 山 龍光禿
+無樹 <sub>，</sub> 到處塌 陷 <sub>，</sub> 落石滾滾 <sub>，</sub>
+就是所謂 「 死龍」 風水家所謂 「石山不葬」 即指此 再者山勢瘦骨嶙峋
+不夠飽滿 此種屬於龍氣不足 亦非吉龍<sub>。</sub> 如果漫山都是細石砂子
+更數凶龍 所謂 「飛沙走石」 諸君試想 如果居此 何來物產
+故風水家認為此為人丁敗絕 家畜死亡之地</p>
+<p>當我們找到好的龍脈結穴大地時 就要拿羅經出來測量 以 山的稜線為准
+看是何龍？ 風水上有分 「 陰龍」 與 「 陽龍」 二種
+其是根據先天八卦納甲取配而得的 以三合派之羅盤來看 第四 圈為所謂 的 「
+二十 四 山 」 （ 圖請參考<sub>：</sub> 龍泉書局 羅經使用方法一書 ）
+<sub>。</sub></p>
+<p>三合盤上紅字的坐山有十二個<sub>，</sub> 金字的坐山亦有十二個
+<sub>。</sub> 紅字即 「 陽龍 」 如 <sub>：</sub> 壬 子 癸 寅 甲 乙 辰 午
+坤 申戌 乾 此為靜陽十二龍 金字即 「 陰龍 」 如 <sub>：</sub> 醜 艮
+卯巽<sub>、</sub> 巳<sub>、</sub> 丙<sub>、</sub> 丁<sub>、</sub>
+未<sub>、</sub> 庚<sub>、</sub> 酉<sub>、</sub> 辛<sub>、</sub>
+亥<sub>，</sub> 此為靜陰十二龍<sub>。</sub></p>
+<p>堪與家講究立向 其法以來龍為主 配合陰宅或陽宅之立向要求必須陽龍配陽向
+<sub>，</sub> 陰龍配陰向 <sub>，</sub> 不可交相雜配<sub>，</sub>
+所謂<sub>：</sub> 「 陰陽相見<sub>，</sub> 福祿永貞 <sub>；</sub>
+陰陽相乘<sub>，</sub> 禍咎滅門 <sub>。</sub> 」 而又其分<sub>，</sub>
+陽龍不貴<sub>，</sub>陰龍大貴 <sub>。</sub> 也有一派風水家其來龍之方向
+以龍過峽處 用羅經來測方向 決定其來龍是二十四 山 中何龍</p>
+<p>氣勢磅礴之陰龍 如來 自 三吉 六秀之來龍 必為大貴之地所謂 「 三吉 」
+<sub>：</sub> 震<sub>、</sub> 庚<sub>、</sub> 亥 <sub>，</sub> 三陰龍也
+<sub>。</sub> 六秀者 <sub>，</sub> 艮<sub>、</sub> 丙 <sub>、</sub> 巽
+<sub>、</sub>辛 兌 丁此六脈之陰龍<sub>。</sub></p>
+<p>古人又將天上之星下對應於二十四坐山 即 「 天光下臨 地德上載」 之意 易
+曰 <sub>：</sub> 天垂象 見吉凶 在天成象 在地成形 二十四
+山對應天上星辰於此姑且不論 讀者可 以參考 「 羅經的使用方法」 一書
+龍泉書局 印行 其中所列甚細 我在此 只提出所謂「天星四貴 」
+之局<sub>，</sub> 因為亥位上應紫微<sub>，</sub>
+艮位上應天市星<sub>，</sub> 巽位上應太微星 兌位上應少微星 此四星為最貴
+其中紫微 天市 太微因其為帝座之位 所以古來風水家都提倡舉凡國都所在
+如有此三位來合<sub>，</sub> 必屬佳局 <sub>。</sub> 其意三來龍
+<sub>，</sub> 正好是亥<sub>、</sub> 艮 <sub>、</sub>
+巽三陰龍相會<sub>，</sub> 用三條直線從橫過明堂<sub>，</sub>
+其交點所在即為首府所在<sub>，</sub> 所以堪與學範圍大到可以看一國家之運氣
+小則可以看一家族之運勢 國家即家的累積 不是嗎？</p>
+<h2 id="二-如何看-水">（二）如何看 「水」</h2>
+<p>基本上 「水」 首先必須清澈甘美 曲折流動 無聲無息 站在龍脈穴上看水
+必須不見水來 不見水去 這是基本原則 今 日臺北盆地之二水<sub>，</sub>
+左至青龍位來之水為新店溪<sub>，</sub> 右 自 白虎位來為基隆河
+兩水會於關渡而出海 其間蜿蜒流長 曲折的流過臺北市 明堂有水 本為大貴之地
+惜兩水早已被污染 遊魚不見一隻 路過其側 臭氣熏鼻 此濁水也
+水聚明堂本主財富 主健康 主清明之政 今受污染 已成濁富之地
+造成人人爭先為財 笑貧不笑娼的世界 只要你有錢 你就是對的 性病滋生
+人都變了 不再見到安居樂業 追尋真理的面孔 歌舞昇平 酒綠燈紅
+人人競相逐樂的世界 不知居安思危 敬慎戒懼 中共仍虎視眈眈的 圍繞在側
+隨時有戰爭之險 造成今 日 社會如此
+相信以風水眼光來看其水受污染為最大的原因之一</p>
+<p>舉凡明堂中有汙濁之水 必主凶事 家宅 內有死水 亦主六畜死亡 人丁斷絕
+如有甘美之泉 必主功名 或出大學問家之流所以水在風水上佔有重要地位
+希望臺北市民好好珍惜此二水 待河清之 日 乃天垂吉象 必有政治清明
+煥然一新之感</p>
+<p>制式局 中之水<sub>，</sub> 讀者必須明瞭 「八路黃泉 」
+之用法<sub>：</sub> 歌訣是<sub>：</sub>「庚丁坤 向是黃泉 坤 向庚丁且莫言
+巽向忌行乙丙上 乙丙須防巽水先 甲癸向上憂見 艮 艮逢 甲癸禍連連
+辛壬乾路最宜忌 乾向辛壬禍亦然 （錄 自 <sub>：</sub> 羅經透解 竹林書局 ）
+」</p>
+<p>此煞只忌向上來水 開 門放水 尤忌 以坐山起例 用長生掌數至絕墓方上消放
+例如 甲 山庚向 甲木長生 亥墓木 絕煞在坤方<sub>。</sub>
+餘仿此<sub>。</sub> 又庚向局立坐 甲 山 <sub>，</sub> 丁向局則立坐癸山
+<sub>，</sub> 此金羊收癸甲之靈 於坤未之水 宜去不宜朝
+向穴位來<sub>。</sub> 若朝如穴前 即黃泉煞 必生少亡孤寡 此專以坐山為主
+不論左旋右旋</p>
+<p>生旺墓 即 合 而孟仲季分 即 意生旺二方水宜來 墓庫方宜去 若宜來反去
+如為生養位之水則主孟房敗 帝旺之位水去則仲房敗 如當去反來
+是死墓位則主季房敗 餘類推 用 圖示法 就很簡單看出 <sub>。</sub></p>
+<p>例如<sub>：</sub> 外環為二十四坐山 內環為八路黃泉
+羅經上可見到若外環之庚丁二向 其中 間坐山 向為坤 即立庚丁向
+坤方忌有來去水 若外環之乙丙二向 其中 間坐山 向為巽 即立乙丙 向時
+巽方忌有來去水<sub>。</sub> 又內環中看八路黃泉法是<sub>，</sub>
+如立二十四 山之甲 向 <sub>，</sub>則 內環與 甲重疊之向為 艮 即意立 甲
+向時 艮方忌有來去水 都凶此即八路黃泉 測水是否吉凶
+其以方位為准的一種制式法</p>
+<p>八路黃泉</p>
+<p><img role="img" aria-label="image" src="data:image/jpeg;base64,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" alt="image" /></p>
+<p>讀者須注意 測量時人須站在穴位上 以此為凖 背向來龍面向水 口
+<sub>。</sub></p>
+<p>肆拾玖</p>
+<h2 id="三-如何看-明堂">（三）如何看「明堂」</h2>
+<p>在穴前有一平整之地即是明堂 大的明堂如臺北市 可以居百萬人 可以為國都
+小的明堂 可以做 田 園 水池等 古人對明堂的禁忌有數種<sub>；</sub></p>
+<p>一 破碎明堂<sub>：</sub> 就是明堂中亂石無章或束缺一角
+西多一凸高低不定 此類即是 住宅商家也有明堂地
+其而臨之馬路就是如今捷運修築 破壞其明堂 又束補西缺 亂堆雜物
+就屬人為破壞明堂 勢必影響其風水 必須公俟其完工 拆除整齊以後
+重新建立乾浄平整之明堂 （馬路） 方可回複生機<sub>。</sub></p>
+<p>二 下陷 明堂 其形如凹之窿地居明堂前 亦主不吉 多有家敗子孫散之危</p>
+<p>三<sub>、</sub> 多路明堂<sub>：</sub>
+在明堂中小路延伸不斷<sub>，</sub> 路又多<sub>，</sub>
+此亦為凶<sub>，</sub>主家宅不寧 匪盜蕞生</p>
+<p>以上是我簡單的介紹一些禁忌 再來我介紹好的明堂
+諸君只需能分辯出好的明堂 那不好的則可立見之<sub>。</sub></p>
+<p>一 水聚天心 <sub>：</sub> 明堂 中為一水湖 中有一小島 此名 水聚天心 如
+日 月 譚中之光華島 為大吉之地</p>
+<p>二 田 園 明堂<sub>：</sub> 稻 田在明堂上 青翠誘人 結實累累
+亦為一大吉之明堂</p>
+<p>三 九曲 明堂 吉言有 「九 曲入明堂 必出帝王」 因為明堂寬廣
+河流進入形成九個 曲道以上 即此 為大富大貴之地 反之水入明堂或出 明堂
+其形如直射 直進直出 必為凶地 不聚財反破散祖業<sub>。</sub> 擧凡明堂平整
+寬廣 皆屬 良佳之地<sub>。</sub> 明堂在家中即庭園位置 一家族之人 日
+常聚會之所 故明堂之吉凶 關係一家族之興衰<sub>。</sub></p>
+<h2 id="四-如何看-案山">（四）如何看「案山」</h2>
+<p>案山是最近明堂 在明堂之正對面的近山為案山 風水家常利用案山來立向
+例如案山為單 則朝正中 山頂為立向點 如案山為雙數 則方向朝著兩山之間為凖
+風水之地 並無一定之名 完全憑風水家到現場看來龍<sub>，</sub> 環抱案山
+<sub>，</sub> 砂水明堂來決定之<sub>，</sub> 一般都是以象來命名
+<sub>，</sub> 功力髙風水家喝出象成<sub>。</sub>
+所以讀者不可一成不變的死記局名 完全要靠臨場決定</p>
+<p>案山之形 一般而言 有常見以下數種</p>
+<p>一 富星砂<sub>：</sub> 其形圓肥敦厚 草木青翠
+立向正確出富商人少見的是大富星砂 此案山要大 且肥厚有力 穩如泰山之感 宅向
+立向朝此 必 出 巨富</p>
+<p>二<sub>、</sub> 筆架案山 <sub>：</sub> 其山形如筆架<sub>，</sub>
+宅向穴向朝 向它<sub>，</sub> 必出文人狀元 主發科甲</p>
+<p>三 水中案山 <sub>：</sub> 如案山聳立水中 屹立如山 立向朝此 則必出
+中流砥柱之大臣 為國之棟樑</p>
+<p>四 九星法定案山如何 請參閲録影帶 此處不提</p>
+<p>故凡案山吉 人吉<sub>；</sub> 案山 凶 人凶</p>
+<h2 id="五-如何看-朝山">（五）如何看「朝山」</h2>
+<p>凡穴前遠遠來朝之山勢 即名朝山 一般言朝山要高大 工整大吉
+如朝山形狀似一太師椅 則主出宰相 如朝山 向軍營般佈列則必生武將 有生殺之權
+能威鎮邊疆 如果朝 山 之後有一小 山頭 吾人站立時可見 蹲姿則不見
+有如窺視狀 則此地必 出竊賊 最好的朝山 一層 比一層高 山巒起伏有力
+則主一代強過一代<sub>，</sub> 沒有朝山 <sub>，</sub>
+可能龍脈發力不過三代<sub>。</sub></p>
+<p>以臺北為例<sub>，</sub> 中央山脈是來龍<sub>，</sub>
+臺北盆地為明堂<sub>，</sub> 總統府為穴位 而整個局其水
+口入海處之觀音山為臺北盆地之朝山 有形像如神佛之山勢 風水家常不願朝向
+再加上 日 本人崇拜太陽 所以興建總統府時 採坐西 向東之佈局 面向旭 日
+東昇之地 不採朝山方向 其局如此 風水家只要稍加留意
+則必能探知臺灣未來之命運走向 <sub>。</sub></p>
+<h2 id="六-如何看-水-口">（六）如何看「水口」</h2>
+<p>真龍穴位之水形 常見是两水由青龍 白虎位出 環流明堂外側在龍虎之 內
+相交會後 聚成大水 再流出 明堂 向外 這 比較簡</p>
+<p>單<sub>，</sub> 可認出會合 口 即水 口 <sub>。</sub></p>
+<p>有時明堂水是外來進入此局 環繞一圈後
+再由另一側出去此時風水家須研判看水由何處向何處流動 進水處與出水處 都是水
+口 不可看錯</p>
+<h2 id="七-如何看-水-口砂">（七）如何看 「水 口砂」</h2>
+<p>在水之出 口 或入 口處 如有天然形成之巨石或山坵 就是水 口砂 風水上認為
+出現有動物象的 必為萬年吉地 例如桂林山水有象立水 口 如飲水狀
+其間必有一龍脈大地蘊藏其間 又以臺北為例 水 口處為關渡 左側是八里 其水
+口砂形如一舞獅 伏臥左側 右邊則是關渡宮 其形似一大圓球 故風水家喝名為
+「獅子抱繡球」 局 所以臺北為一大吉地
+在此提出希望臺北市民善加珍惜此一福地<sub>，</sub>
+不可再加破壞<sub>，</sub> 否則下一代 日 漸萎靡不振<sub>，</sub>
+承受上一代的惡行所生之後果</p>
+<h2 id="八-如何看-青龍-白虎">（八）如何看 「青龍」「白虎」</h2>
+<p>青龍位居來龍之左側 吾人背對來龍 左手邊起伏之山巒即名青龍
+不一定位在正東</p>
+<p>但有一要求 真龍之左脈必須出 自 本身來龍之延伸
+所以青龍與來龍必連接在一起<sub>，</sub> 白虎也一樣<sub>，</sub>
+講究的是<sub>，</sub> 青龍與 白虎必須是 由來龍分出 的枝腳方為真型
+如果青龍 白虎位與主脈分開 為其他龍脈之枝腳 則在風水上 此不為青龍 白虎
+為一假穴<sub>。</sub></p>
+<p>伍拾肆</p>
+<p>一般要青龍較高 白虎較矮 兩相如手臂般的把穴位抱在其中 如此則必能
+「藏風納氣」 風水之要求之 「藏風納氣」 必須站在穴位上 感受到寂靜無聲
+清風徐來 才是真穴位 如果飛砂走石 朔風撲面 必 皆非 良地 縱然穴形極佳
+諸如砂 水 龍虎 案山 朝山都為上上之格 如穴位過高 無法藏風納氣
+其發力也不過很短暫 甚至於有形無神 外表聲名遠播 內在實空無一物
+對子孫並不是很好 造成其好高騖遠 做事虎頭蛇尾 如此一來 如加上名氣大
+那只會更兇 不但於事無補 其結果必悒郁以終 一生不得志<sub>。</sub></p>
+<p>故為一風水家 在取捨之間 必須恰到好處 過與不及都非 良策 所謂
+「福地福人居」 誠不為過 應以平實務實之心態 為民眾謀福利 <sub>，</sub>
+絕不可見客戶 有錢就攀龍 附鳳<sub>，</sub> 見客戶 貧窮就嗤之 以鼻 這是一
+良心事業 希吾同道中人 皆有此念</p>
+<h2 id="九-如何看-官星">（九）如何看 「官星」</h2>
+<p>官星位居本脈與青龍 白虎之夾縫間 其意為庫 故比較講究其型方正圓大
+無破裂處 無崩 陷之處 如此庫乃充足 家庭富裕還有穴前官星<sub>，</sub> 即
+由青龍 白虎延伸 出去之山腳支脈<sub>，</sub> 亦為官星<sub>，</sub>
+官星完整無缺<sub>，</sub> 且龍脈出水之向因官星阻擋而蜿延而出
+<sub>，</sub> 如此更吉<sub>，</sub>因其龍脈如無官星護駕 水必直射而出
+必主發也虛花 終致一敗塗地<sub>。</sub></p>
+<h2 id="十-如何看-鬼星">（十）如何看 「鬼星」</h2>
+<p>鬼星位在青龍的後方 緊鄰龍脈 其亦為主脈之分枝 在風水上為一輔助地位
+如龍脈本身主發武官 加上鬼星如旗陣般佈列在後 將加吉於此脈
+鬼星如果受到破壞 則人事上必遇小人從中作梗 依此類推</p>
+<h2 id="十一-如何測出-結穴-所在">（十一）如何測出 「結穴」所在</h2>
+<p>古人風水家有所謂杖法 在龍脈本身之立向
+先用羅經測出畫一直線<sub>，</sub> 再站在水 口處<sub>，</sub>
+往龍脈方向看<sub>，</sub> 取青龍 白虎環抱之中心點 再劃一線
+如此兩線之交點 即為穴位所在 然後再站立穴位上 前面案山之高低
+必須在測量人這臍上肩下 如此高低調整即可得之真穴位<sub>。</sub></p>
+<p>龍穴中之土色<sub>，</sub>
+必須與龍過峽處之土色相同方不失真脈<sub>，</sub> 在土色上之取捨
+過去風水師都認為以紅黃光潤為上佳 乾枯色黑為兇地 土質要厚 堅硬多石為兇
+土質剛柔適中 有溫潤感為佳 如為乾枯多渣為兇</p>
+<p>又有漫山之土色與穴土同 此為平常之穴 如穴中土特殊質優而與漫山之土不同
+則必為佳穴 如開穴見有生物 如魚 鮑等必為天然之精氣所聚<sub>，</sub>
+佳穴也<sub>，</sub> 如見穴中蛇鼠蟲蟻者必為兇穴<sub>，</sub>
+所以風水家定穴 外看山 川形勢 水流走 向 內看土色美惡 缺一不可
+所以佳穴難求也</p>
+<p>讀者研究至此 同時可參考市面上有的幾本書 內容甚佳 且多有創見 創見諸如
+隆泉書局 的 「羅經使用方法」 武陵發生的「周天易盤」 由前輩吳明修著
+竹林書局的 「 羅經透解」 <sub>。</sub> 我在此地脈道中
+除了上述前賢之論點外 再添加本人運用周
+易本義中天圓地方之易經八卦來應用到風水上 如此一來可把羅盤簡化
+只須天地人三盤及方圓二卦 即可很正確的做出 良佳之風水
+且能利用天旋地轉之方式 測知此穴何時發力 庇蔭在何人身上
+讀者同時參考錄影帶 及此後段 就可輕而易舉的像批八字一樣的列出此穴之流年
+各房之事<sub>。</sub></p>
+<table>
+<tbody>
+<tr>
+<td>同人临损节中归孚味除兑履泰大畜需小畜大壮大有夬乾姤大过鼎恒巽井蛊升讼因未乘换坎藏师遁成旅过凿蓬长东帝行者言微观比制神复厥也高儒宿尊暗卦天卦</td>
+<td>坤剥比观豫晋萃否谦艮渐蹇小过旅咸遁师蒙坎涣解未济困讼升蛊井巽恒鼎大过姤复颐屯益震噬随无妄明夷贲既家人丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革同人临损节中归孚家丰离革</td>
+</tr>
+</tbody>
+</table>
+<p>在我們 了解此圖之前 我必須先讓讀者知道 吾國古傳之易經 在現今大學中
+能找到開此課之教授已不多 即論有之 亦皆在易之爻辭上做形式的解釋
+無法很傳神 的實際運用在 日 常生活上<sub>。</sub> 了解易經簡易
+的原則<sub>，</sub> 不論在千頭萬緒復雜環境中 <sub>，</sub> 很簡單的利用
+易經的法則 即可輕易知曉如何去做 它像一部十分完美的電腦一樣 早已放在那邊
+只是我們能否解讀它而已 在 目 前學術界並沒有發揚的很好 反而由研究算命
+卜卦的人 一直在延續它的生命 為祖先的一點命脈執著不放 觀之今 日
+許多博士級人士 只知一味的崇洋只要西洋來的就是對的 就是科學的 中
+國古代的就是迷信 這是不對的 殊不知外國人的心理與中國人正好相反
+他們只要發現你是 中 國人 都很好奇的想知道 中華文化的 內容是什麼
+但所得到的結果 都令他們大失所望 因為太多的 中 國人對 自己的文化
+不但不懂反而排斥 所 以個人希望我們五術界的 同道們<sub>，</sub>
+要丟棄門戶之見<sub>，</sub> 互相的建立感情<sub>，</sub>
+把容易造成迷信的部份刪掉 好好的 緊守 崗位 將 中華文化不遺余力 的發揚它
+勿 令其失傳 方不愧為炎黃子孫</p>
+<p>言歸正傳 首先諸君看天圓圖上方乾卦的位置 它與我們羅經上 （ 國泰聯邦出
+品 <sub>、</sub> 8 × 8 寸） 第二十七層 <sub>、</sub> 六十四小卦相 同
+<sub>，</sub> 天地卦子午定位好了 以後 （此子午位須與地盤之二十四
+山為準）即可見午之上端為乾位 子之下端為坤位 乾代表天 代表陽 自上乾 開始
+向左旋轉 表示陽漸虧損 陰漸生 所 以是地球之黃道面
+也就是以地球為準太陽向東出所運行的方向 地球一年繞太陽一周 約三百六十五
+日 其多出之 日 四年合一個月 所以每四年有閏年一次<sub>。</sub> 吾人把此由
+「乾」 左旋下到 「坤 」 定為年紀<sub>。</sub> 由下方坤位始 坤代表陰
+代表月 亮 由坤 向右旋 逆時針方向 有陰極生陽之意 初陽始生於下 故次剝
+再次比 依此去計算 冬盡陽復生於下 節氣之由來也 所以天圓卦圖在周 易
+中實是推算時間用的 可以一直的旋轉到過去 與未來
+羅盤上順時針方向為未來逆時針方向為過去<sub>，</sub>
+業已明矣<sub>。</sub></p>
+<p>再就地方卦圖來說 其代表的是空間地點 天圓卦圖為上乾下坤為先天卦之佈局
+而地方卦圖正好相反 坤在上 乾在下 乃因地氣上升 天氣下降 故萬物乃生
+其生死之輪廻 就如 同十二長生從長生 沐浴 冠帶 臨官 帝旺 衰 病 死 墓 絕
+胎養 一直循環不停 其間生老病死 歷歷在 目 連死後如何再延長亦有列入
+其精密如此 令人贊嘆激賞不已<sub>。</sub></p>
+<p>在羅經上第二十層 （依據國泰聯邦公司 ） 三元 三合綜合盤上<sub>，</sub>
+可見其列為先天內盤父母卦<sub>，</sub> 先天六十四卦小卦名 <sub>，</sub>
+即為此地方卦圖<sub>，</sub> 學者可從此圖左上之坤卦開始<sub>，</sub>
+由上往下為謙<sub>、</sub> 師<sub>、</sub> 升<sub>、</sub>復 明夷 臨 泰
+再上至第二直列為剝 艮 蒙……等 直到第四列最下方中孚 小畜為止
+核對到羅經第二十層 午之上方為坤卦始 向左旋轉到子位正好是小畜卦
+此是地陰之氣由初始 漸進而終升至天 其意如此 再由子山下方之乾卦作始
+向右旋至頂方坤位 在地方卦圖上也正好是從右下角 向上直升 依序為履
+同人<sub>、</sub> 無妄<sub>、</sub> 姤<sub>、</sub> 訟<sub>、</sub>
+遯<sub>、</sub> 否<sub>，</sub> 再轉到右方第二列下方之夬<sub>、</sub>
+兌……如此循環很明顯的指示吾人 從地之陰氣得陽而昇 天之陽氣遇陰而下降
+所以萬物不離此道 反之 此道包含地球上所有之生命甚至無生命之物 皆有輪廻
+易之謂生生之義 其盡於此 日 月 為易 天地最大 含盡一切 此萬物之法則
+恒古不變 且可簡化為六十 四個卦 每卦管六爻
+地球上所有物質之變化亦不過六段過程 超過此數 則必為無用之物 每陰爻管六年
+每個陽爻管九年 比如地天泰 卦爻為䷊ 其中三陰爻走十八年 三陽爻走二十七年
+其數如此 合管四十五年 余類推可知</p>
+<p>吾人了解此天圓地方之真義後 現在回頭來研究如何定卦 風水家以水
+口朝向為外卦 穴 內坐山為內卦 合為本卦 例如水 口 向外朝 艮位
+而來龍方向為乾位 則本卦即 山天大畜卦 從穴位立向看宗族幾代 孟 仲
+季房等受此穴影響之對象 學者可以參考錄影教學帶得知如何計算 此處不詳言
+吾舉例說明之</p>
+<p>例<sub>：</sub> 本卦為山天大畜卦<sub>，</sub> 其發祿之久<sub>，</sub>
+福發何房？ 歷時多久？到第幾代止？ 一直是許多風水師不傳之秘 其實不難
+吾人如用天圓地方之卦來測立可得知</p>
+<p>吾人站立穴場正 中 以羅經堪測 如發現孟房位 砂肥滿圓敦 已知孟房發
+再看天圓卦指 向 如為升卦 其爻為䷭ 其四陰二陽<sub>，</sub>
+所以共管四十二年<sub>，</sub> 但因地與風<sub>，</sub>
+一為坤母<sub>，</sub> 一為長女<sub>，</sub> 故得知孟房之妻<sub>，</sub>
+必得意商場<sub>，</sub> 到巔峰時<sub>，</sub> 有女長成<sub>，</sub>
+且為長女能力足以發揚母業 故必為長女承繼 連發第二 第三陽爻共管十八年
+故六年後之十八年必平步青雲 退休後 長女繼承 且為坤地卦 其始終如一不變特性
+必能守成祖業再十八年 此時再看升之地方卦為雷天大壯卦
+大壯卦有增益升卦之象且雷為長子 天為夫為父 其連接天圓卦 長女必嫁貴夫
+且得一子 父子相助母業其勢已成 吾人在落穴入殮時 或立陽宅之基時 已可獲知
+如此資料<sub>。</sub></p>
+<p>其余各卦之推演亦如此 相信如果讀者從本著作天機道 進入地脈道
+其間歷經人間道之修行 必能輕而易舉的獲知此一不傳之法門 <sub>。</sub></p>
+<p>至於入穴時其方向朝珠寶線 來龍如何測定穿山七十二龍
+方向如何應用六十透地龍 九星法 如何參看 學者可以看錄影帶之說明
+此不再述</p>
+<h2 id="結語">結語</h2>
+<p>由天機道 人間道 到地脈道 學者了解到我們祖先遺留下的瑰寶<sub>，</sub>
+並非是四書五經能代表的<sub>，</sub> 唯有易經<sub>，</sub>
+能代表吾國五千年文化的精髓 此道已至善 完美無瑕 足以使西洋人稱羨不已
+只有自 唉 自 嘆不懂中文的痛苦 其實文字是從有圖 以後才有的
+人的歷史必先有圖<sub>，</sub> 再創造文字<sub>，</sub>
+世界各國不下百種以上文字語言<sub>，</sub>
+就算一個人終其一生研究各國語言<sub>，</sub> 當他臨終時<sub>，</sub>
+必嘆時 日 不多<sub>，</sub> 其志未竟 如此死不瞑 目 其文字生障如此
+亦不必怨天尤人<sub>。</sub> 吾常對學生說 讀書不算什麼
+因為文字都已寫好在那裡 不須再思慮只要背就可以 但是如能讀圖
+則有能力通各國言語 此為大智慧之人<sub>，</sub>
+非常人所能理解的<sub>，</sub> 在智慧領域中是奔放不被束縛的<sub>，</sub>
+瞬息萬變 不可捉摸 其實道理很簡單 產生復雜的問題 是起因於才智平庸的人 想
+出 了 許多 無用 無知 的 問題 所 以世界才會如此復雜 野心始生於心
+夫野心也唯心可去 心 中 了 無雜念 中虛為明 明而後知動
+讀易其不過在知所進退 知存亡之始 知時機之生而已
+萬事從一開始就已能判定其結果如何 此得易之神矣 ！</p>
+<p>中華民國八十三年八月 二十二 日</p>
+</body>
+</html>
