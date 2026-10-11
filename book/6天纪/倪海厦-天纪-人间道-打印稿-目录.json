@@ -1,0 +1,457 @@
+{
+  "source": "倪海厦-天纪-人间道-打印稿.html",
+  "generator": "scripts/repair_books.py",
+  "toc_mode": "重建目录（OCR 双栏交错 → 按页码归序） · 全篇平级",
+  "generated_at": "2026-10-11 19:32:04",
+  "entry_count": 64,
+  "entries": [
+    {
+      "level": 1,
+      "title": "乾爲天",
+      "page_raw": "1",
+      "anchor": "乾爲-天",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "坤爲地",
+      "page_raw": "7",
+      "anchor": "坤-爲地",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水雷屯",
+      "page_raw": "11",
+      "anchor": "水雷-屯",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山水蒙",
+      "page_raw": "13",
+      "anchor": "山-水蒙",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水天需",
+      "page_raw": "15",
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "天水讼",
+      "page_raw": "17",
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "地水師",
+      "page_raw": "19",
+      "anchor": "地水師",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水地比",
+      "page_raw": "21",
+      "anchor": "水地比",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "風天小畜",
+      "page_raw": "25",
+      "anchor": "風天小畜",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天澤履",
+      "page_raw": "27",
+      "anchor": "天澤履",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "地天泰",
+      "page_raw": "29",
+      "anchor": "地天泰",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天地否",
+      "page_raw": "31",
+      "anchor": "天地否",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天火同人",
+      "page_raw": "33",
+      "anchor": "天火-同-人",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火天大有",
+      "page_raw": "35",
+      "anchor": "火天大有",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "地山謙",
+      "page_raw": "37",
+      "anchor": "地山謙",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷地豫",
+      "page_raw": "39",
+      "anchor": "雷地豫",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤雷隨",
+      "page_raw": "41",
+      "anchor": "澤-雷-隨",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山風蠱",
+      "page_raw": "43",
+      "anchor": "山-風蠱",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "地澤臨",
+      "page_raw": "45",
+      "anchor": "地澤-臨",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "風地觀",
+      "page_raw": "47",
+      "anchor": "風地觀",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火雷噬嗑",
+      "page_raw": "49",
+      "anchor": "火雷-噬嗑",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山火賁",
+      "page_raw": "51",
+      "anchor": "山-火賁",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山地剝",
+      "page_raw": "53",
+      "anchor": "山地剝",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "地雷復",
+      "page_raw": "55",
+      "anchor": "地雷-復",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天雷无妄",
+      "page_raw": "57",
+      "anchor": "天雷-无妄",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山天大畜",
+      "page_raw": "59",
+      "anchor": "山-天大-畜",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山雷頤",
+      "page_raw": "61",
+      "anchor": "山-雷-頤",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤風大過",
+      "page_raw": "63",
+      "anchor": "澤-風大-過",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "坎爲水",
+      "page_raw": "65",
+      "anchor": "坎爲水",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "離為火",
+      "page_raw": "67",
+      "anchor": "離-為-火",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤山咸",
+      "page_raw": "69",
+      "anchor": "澤-山-咸",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷風恆",
+      "page_raw": "71",
+      "anchor": "雷-風恆",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天山遯",
+      "page_raw": "73",
+      "anchor": "天山遯",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷天大壯",
+      "page_raw": "75",
+      "anchor": "雷-天大-壯",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火地晉",
+      "page_raw": "77",
+      "anchor": "火地晉",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "地火明夷",
+      "page_raw": "79",
+      "anchor": "地火明-夷",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "風火家人",
+      "page_raw": "81",
+      "anchor": "風火家人",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火澤睽",
+      "page_raw": "83",
+      "anchor": "火澤睽",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水山蹇",
+      "page_raw": "85",
+      "anchor": "水-山-蹇",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷水解",
+      "page_raw": "87",
+      "anchor": "雷-水解",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "山澤損",
+      "page_raw": "89",
+      "anchor": "山-澤損",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "風雷益",
+      "page_raw": "91",
+      "anchor": "風雷-益",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤天夬",
+      "page_raw": "93",
+      "anchor": "澤-天夬",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天風姤",
+      "page_raw": "95",
+      "anchor": "天風姤",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤地萃",
+      "page_raw": "97",
+      "anchor": "澤地萃",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "地風升",
+      "page_raw": "99",
+      "anchor": "地風升",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤水困",
+      "page_raw": "101",
+      "anchor": "澤-水-困",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水風井",
+      "page_raw": "103",
+      "anchor": "水風井",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "澤火革",
+      "page_raw": "105",
+      "anchor": "澤-火革",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火風鼎",
+      "page_raw": "107",
+      "anchor": "火風鼎",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "震爲雷",
+      "page_raw": "109",
+      "anchor": "震-爲-雷",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "艮為山",
+      "page_raw": "111",
+      "anchor": "艮-為-山",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "風山漸",
+      "page_raw": "113",
+      "anchor": "風山-漸",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷澤歸妹",
+      "page_raw": "115",
+      "anchor": "雷-澤-歸妹",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷火豐",
+      "page_raw": "117",
+      "anchor": "雷-火-豐",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火山旅",
+      "page_raw": "119",
+      "anchor": "火山旅",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "巽為風",
+      "page_raw": "121",
+      "anchor": "巽-為-風",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "兑爲澤",
+      "page_raw": "123",
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "風水渙",
+      "page_raw": "125",
+      "anchor": "風水渙",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水澤節",
+      "page_raw": "127",
+      "anchor": "水澤-節",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "風澤中孚",
+      "page_raw": "129",
+      "anchor": "風澤-中-孚",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "雷山小過",
+      "page_raw": "131",
+      "anchor": "雷-山-小過",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "水火既濟",
+      "page_raw": "133",
+      "anchor": "水火既-濟",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "火水未濟",
+      "page_raw": "135",
+      "anchor": "火水未-濟",
+      "match": "标题一致"
+    }
+  ]
+}

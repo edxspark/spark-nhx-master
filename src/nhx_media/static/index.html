@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>倪师 AI · 媒体资源管理</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">倪</span>
+    <div>
+      <h1>媒体资源管理</h1>
+      <p class="sub">视频 / 音频索引 · 本体在 OSS</p>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span id="authBadge" class="badge draft" title="当前认证模式">载入中…</span>
+    <label class="inline">
+      码率档位
+      <select id="bitrate"></select>
+    </label>
+    <button id="refresh" class="btn">刷新</button>
+    <button id="loginBtn" class="btn" hidden>登录</button>
+    <button id="logoutBtn" class="btn" hidden>退出</button>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="overview">总览</button>
+  <button class="tab" data-tab="items">资源清单</button>
+  <button class="tab" data-tab="validate">校验</button>
+  <button class="tab" data-tab="compliance">合规</button>
+</nav>
+
+<main>
+
+<!-- ── 总览 ────────────────────────────────────────────────────────────── -->
+<section id="tab-overview" class="panel active">
+  <div id="statCards" class="cards"></div>
+
+  <h2>成本估算</h2>
+  <div class="callout" id="estimateCaveat"></div>
+  <div id="costBlock"></div>
+
+  <h2>各码率档位体积对比</h2>
+  <div id="bitrateBlock"></div>
+
+  <h2>系列</h2>
+  <div id="seriesBlock"></div>
+</section>
+
+<!-- ── 资源清单 ─────────────────────────────────────────────────────────── -->
+<section id="tab-items" class="panel">
+  <div class="filters">
+    <label class="inline">类型
+      <select id="fKind"><option value="">全部</option></select>
+    </label>
+    <label class="inline">系列
+      <select id="fSeries"><option value="">全部</option></select>
+    </label>
+    <label class="inline">状态
+      <select id="fStatus"><option value="">全部</option></select>
+    </label>
+    <label class="inline grow">搜索
+      <input id="fQuery" type="search" placeholder="标题 / 科目 / id 关键词">
+    </label>
+    <button id="fApply" class="btn primary">应用</button>
+    <button id="fReset" class="btn">重置</button>
+  </div>
+
+  <p class="muted" id="itemsMeta"></p>
+  <div class="tablewrap">
+    <table id="itemsTable">
+      <thead>
+        <tr>
+          <th>ID</th><th>标题</th><th>科目</th><th>状态</th>
+          <th>OSS</th><th class="num">时长</th><th class="num">章节</th><th>转录</th><th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="pager">
+    <button id="prev" class="btn">上一页</button>
+    <span id="pageInfo" class="muted"></span>
+    <button id="next" class="btn">下一页</button>
+  </div>
+</section>
+
+<!-- ── 校验 ────────────────────────────────────────────────────────────── -->
+<section id="tab-validate" class="panel">
+  <p class="muted">校验规则：已上线条目必须齐备 <code>oss_key</code> + <code>duration_sec</code> + 至少 1 个 <code>segment</code>；
+  章节不得重叠或超出时长；<code>license_status</code> 必填合法；OSS key 遵循 <code>nhx/…</code> 规范。</p>
+  <div id="validateSummary"></div>
+  <div id="validateBody"></div>
+</section>
+
+<!-- ── 合规 ────────────────────────────────────────────────────────────── -->
+<section id="tab-compliance" class="panel">
+  <div class="callout warn">
+    <strong>批量下架</strong>
+    <p>按授权状态或来源类型批量把条目标记为「已下架」。用于权属主张变化时的应急处理。
+       每份索引都保留 <code>source_url</code> 与 <code>fetched_at</code>，可精确定位来源。</p>
+  </div>
+  <div class="filters">
+    <label class="inline">授权状态
+      <select id="offLicense"><option value="">（不指定）</option></select>
+    </label>
+    <label class="inline">来源类型
+      <select id="offSource"><option value="">（不指定）</option></select>
+    </label>
+    <button id="offApply" class="btn danger">执行下架</button>
+  </div>
+  <p class="muted">必须至少指定一项，避免误伤全库。</p>
+  <div id="offResult"></div>
+
+  <h2>授权状态分布</h2>
+  <div id="licenseBlock"></div>
+</section>
+
+</main>
+
+<!-- ── 编辑抽屉 ──────────────────────────────────────────────────────────── -->
+<aside id="drawer" class="drawer">
+  <div class="drawer-head">
+    <h2 id="drawerTitle">编辑条目</h2>
+    <button id="drawerClose" class="btn">关闭</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+<div id="scrim" class="scrim"></div>
+
+<!-- ── 登录对话框 ────────────────────────────────────────────────────────── -->
+<div id="loginModal" class="modal">
+  <div class="modal-box">
+    <h2>登录</h2>
+    <p class="muted" id="loginHint">请输入用户名与口令。</p>
+    <div class="field">
+      <label for="loginUser">用户名</label>
+      <input id="loginUser" type="text" autocomplete="username" autofocus>
+    </div>
+    <div class="field">
+      <label for="loginPass">口令</label>
+      <input id="loginPass" type="password" autocomplete="current-password">
+    </div>
+    <p id="loginError" class="login-error" hidden></p>
+    <div class="actions">
+      <button id="loginSubmit" class="btn primary">登录</button>
+      <button id="loginCancel" class="btn">取消</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

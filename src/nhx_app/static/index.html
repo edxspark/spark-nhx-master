@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>倪师 AI · 中医经典研习与传统文化参考</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <span class="logo">倪</span>
+    <div class="brand-text">
+      <h1>倪师 AI</h1>
+      <p>中医经典研习 · 传统文化参考</p>
+    </div>
+  </div>
+  <div class="top-right">
+    <span id="statusPill" class="pill" title="服务状态">连接中…</span>
+    <button id="newChat" class="btn">新对话</button>
+    <button id="loginBtn" class="btn" hidden>登录</button>
+    <button id="logoutBtn" class="btn" hidden>退出</button>
+  </div>
+</header>
+
+<div class="notice-bar">
+  <strong>我是基于倪海厦先生公开资料构建的 AI 助手，不是倪海厦本人。</strong>
+  内容为经典与学术思想整理分享，<strong>不构成医疗诊断或处方建议</strong>。
+  若有急症，请立即就医。
+</div>
+
+<main id="chat" class="chat">
+  <div class="welcome" id="welcome">
+    <h2>倪师 AI</h2>
+    <p class="sub">以倪海厦先生公开学术内容为知识内核，提供有边界、可追溯的经典研习与参考服务。</p>
+
+    <div class="cap-grid">
+      <div class="cap">
+        <span class="cap-tag l1">L1 学习</span>
+        <h3>经典讲解</h3>
+        <p>伤寒论条文、方剂解析、本草穴位、医案复盘、学习路径</p>
+      </div>
+      <div class="cap">
+        <span class="cap-tag l2">L2 参考</span>
+        <h3>症状梳理</h3>
+        <p>结构化问诊、辨证思路、经方组成参考（不给剂量），可升级医师确认</p>
+      </div>
+      <div class="cap">
+        <span class="cap-tag l3">L3 文化</span>
+        <h3>传统文化</h3>
+        <p>易经、风水、占卜、命理——文化研究与娱乐参考</p>
+      </div>
+    </div>
+
+    <div class="starters">
+      <button class="chip" data-q="伤寒论第 12 条讲的是什么？">伤寒论第 12 条</button>
+      <button class="chip" data-q="桂枝汤的组成和方义是什么？">桂枝汤组成方义</button>
+      <button class="chip" data-q="我想系统学习伤寒论，怎么入门？">如何入门伤寒论</button>
+      <button class="chip" data-q="最近总是失眠，凌晨两三点容易醒，白天口苦">失眠口苦怎么调理</button>
+    </div>
+  </div>
+</main>
+
+<div class="composer">
+  <div class="composer-inner">
+    <textarea id="input" rows="1" placeholder="说说你想了解的经典、身体情况，或文化问题…（Enter 发送，Shift+Enter 换行）"></textarea>
+    <button id="send" class="send" title="发送">发送</button>
+    <button id="stop" class="send stop" title="停止" hidden>停止</button>
+  </div>
+  <p class="hint" id="composerHint">AI 生成内容仅供参考，不能替代执业医师诊断。</p>
+</div>
+
+<!-- 登录 -->
+<div id="loginModal" class="modal">
+  <div class="modal-box">
+    <h2>登录</h2>
+    <p class="muted" id="loginHint">请输入用户名与口令。</p>
+    <label class="field"><span>用户名</span><input id="loginUser" type="text" autocomplete="username"></label>
+    <label class="field"><span>口令</span><input id="loginPass" type="password" autocomplete="current-password"></label>
+    <p id="loginError" class="err" hidden></p>
+    <div class="modal-actions">
+      <button id="loginSubmit" class="btn primary">登录</button>
+      <button id="loginCancel" class="btn">取消</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

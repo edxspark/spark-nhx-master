@@ -1,0 +1,72 @@
+{
+  "source": "倪海厦-天纪-天机道-繁体竖版.html",
+  "generator": "scripts/repair_books.py",
+  "toc_mode": "重建目录（表格型：点导线成 <td>:</td>，页码失联）",
+  "generated_at": "2026-10-11 19:32:04",
+  "entry_count": 9,
+  "entries": [
+    {
+      "level": 1,
+      "title": "皇極經世之易數推算法",
+      "page_raw": null,
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "六十四卦之世應列法",
+      "page_raw": null,
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "鐵版神數坤集的秘訣",
+      "page_raw": null,
+      "anchor": "鐵版神數坤集的秘訣",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "鐵版神數之排列法",
+      "page_raw": null,
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "易經推命起大運法",
+      "page_raw": null,
+      "anchor": "易經推命起大運法",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "易經推命與鐵版神數",
+      "page_raw": null,
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 1,
+      "title": "紫微斗數",
+      "page_raw": null,
+      "anchor": "紫微斗數",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "八卦之性悟天地之道",
+      "page_raw": null,
+      "anchor": "八卦之性悟-天地之道",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "天機道",
+      "page_raw": null,
+      "anchor": "天機道",
+      "match": "标题一致"
+    }
+  ]
+}

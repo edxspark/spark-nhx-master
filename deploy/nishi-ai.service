@@ -1,0 +1,55 @@
+# 倪师 AI · systemd 服务单元
+#
+# 安装：
+#   sudo cp deploy/nishi-ai.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now nishi-ai
+#
+# 查看日志：
+#   journalctl -u nishi-ai -f
+
+[Unit]
+Description=NiShi AI (倪师 AI) - 中医经典研习与传统文化参考服务
+Documentation=file:/opt/nishi-ai/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nishi
+Group=nishi
+WorkingDirectory=/opt/nishi-ai
+
+# 环境变量从文件读取（含 API Key，权限设为 600 且属主为 nishi）
+EnvironmentFile=/opt/nishi-ai/.env
+
+# 直接用系统 python3，无第三方依赖
+ExecStart=/usr/bin/python3 /opt/nishi-ai/src/nhx_app/server.py
+
+Restart=always
+RestartSec=3
+
+# 优雅停止
+KillSignal=SIGTERM
+TimeoutStopSec=20
+
+# ── 安全加固 ────────────────────────────────────────────────────────────
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+# 仅允许写入数据目录
+ReadWritePaths=/opt/nishi-ai/data
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+# 资源限制：防止会话数据异常增长拖垮主机
+LimitNOFILE=65535
+MemoryMax=1G
+
+[Install]
+WantedBy=multi-user.target

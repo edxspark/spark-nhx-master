@@ -1,0 +1,29 @@
+# 倪师 AI · 媒体资源管理后台 systemd 单元（可选）
+#
+# ⚠️ 该后台可改写索引，**不要暴露到公网**。
+# 建议只监听 127.0.0.1，通过 SSH 隧道访问：
+#     ssh -L 8788:127.0.0.1:8788 user@server
+# 然后本地打开 http://127.0.0.1:8788
+
+[Unit]
+Description=NiShi AI Media Admin Console
+After=network-online.target
+
+[Service]
+Type=simple
+User=nishi
+Group=nishi
+WorkingDirectory=/opt/nishi-ai
+Environment=NHX_AUTH_MODE=protected
+ExecStart=/usr/bin/python3 /opt/nishi-ai/src/nhx_media/server.py --host 127.0.0.1 --port 8788
+
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/nishi-ai/data /opt/nishi-ai/media
+
+[Install]
+WantedBy=multi-user.target

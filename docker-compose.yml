@@ -1,0 +1,53 @@
+# 倪师 AI · Docker Compose
+#
+# 用法：
+#   cp .env.example .env   # 填好 NHX_LLM_API_KEY
+#   docker compose up -d
+#   docker compose logs -f
+#
+# 默认只映射到 127.0.0.1，由宿主机的 Nginx 反代并提供 HTTPS。
+# 若直接对外暴露，请务必先设置 NHX_AUTH_MODE=protected 或 strict。
+
+services:
+  nishi-ai:
+    build: .
+    image: nishi-ai:latest
+    container_name: nishi-ai
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:8790:8790"
+    volumes:
+      # 会话与认证数据必须持久化，否则重启即丢
+      - ./data:/app/data
+      # 知识库与索引挂载进来，更新内容无需重建镜像
+      - ./knowledge:/app/knowledge:ro
+      - ./media:/app/media
+    healthcheck:
+      test: ["CMD", "python3", "-c",
+             "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8790/api/health', timeout=4).status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  # 可选的媒体管理后台：默认不暴露端口，用 SSH 隧道访问
+  nishi-media:
+    build: .
+    image: nishi-ai:latest
+    container_name: nishi-media
+    restart: unless-stopped
+    env_file: .env
+    command: ["python3", "src/nhx_media/server.py", "--host", "0.0.0.0", "--port", "8788"]
+    expose:
+      - "8788"
+    volumes:
+      - ./data:/app/data
+      - ./media:/app/media
+    profiles:
+      - media

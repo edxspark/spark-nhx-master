@@ -1,0 +1,1829 @@
+{
+  "source": "人纪系列神农本草下册.html",
+  "generator": "scripts/repair_books.py",
+  "toc_mode": "生成目录（原稿没有目录）",
+  "generated_at": "2026-10-11 19:32:04",
+  "entry_count": 260,
+  "entries": [
+    {
+      "level": 1,
+      "title": "一二九、蠡鱼",
+      "page_raw": null,
+      "anchor": "一二九蠡鱼",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三〇、鲤鱼胆",
+      "page_raw": null,
+      "anchor": "一三〇鲤鱼胆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三一、藕实茎",
+      "page_raw": null,
+      "anchor": "一三一藕实茎",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三二、大枣",
+      "page_raw": null,
+      "anchor": "一三二大枣",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三三、蒲萄",
+      "page_raw": null,
+      "anchor": "一三三蒲萄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三四、蓬藥",
+      "page_raw": null,
+      "anchor": "一三四蓬藥",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三五、鸡头实",
+      "page_raw": null,
+      "anchor": "一三五鸡头实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三六、胡麻",
+      "page_raw": null,
+      "anchor": "一三六胡麻",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三七、麻薈",
+      "page_raw": null,
+      "anchor": "一三七麻薈",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三八、冬葵子",
+      "page_raw": null,
+      "anchor": "一三八冬葵子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一三九、苋实",
+      "page_raw": null,
+      "anchor": "一三九苋实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四〇、瓜蒂",
+      "page_raw": null,
+      "anchor": "一四〇瓜蒂",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四一、白瓜子",
+      "page_raw": null,
+      "anchor": "一四一白瓜子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四二、苦菜",
+      "page_raw": null,
+      "anchor": "一四二苦菜",
+      "match": "标题本身"
+    },
+    {
+      "level": 1,
+      "title": "贰、中经",
+      "page_raw": null,
+      "anchor": "贰中经",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四三、雄黄",
+      "page_raw": null,
+      "anchor": "一四三雄黄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四四、石硫黄",
+      "page_raw": null,
+      "anchor": "一四四石硫黄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四五、雌黄",
+      "page_raw": null,
+      "anchor": "一四五雌黄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四六、水银",
+      "page_raw": null,
+      "anchor": "一四六水银",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四七、石膏",
+      "page_raw": null,
+      "anchor": "一四七石膏",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四八、慈石",
+      "page_raw": null,
+      "anchor": "一四八慈石",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一四九、凝水石",
+      "page_raw": null,
+      "anchor": "一四九凝水石",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五〇、阳起石",
+      "page_raw": null,
+      "anchor": "一五〇阳起石",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五一、孔公孽",
+      "page_raw": null,
+      "anchor": "一五一孔公孽",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五二、殷孽",
+      "page_raw": null,
+      "anchor": "一五二殷孽",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五三、铁精",
+      "page_raw": null,
+      "anchor": "一五三铁精",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五四、理石",
+      "page_raw": null,
+      "anchor": "一五四理石",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五五、长石",
+      "page_raw": null,
+      "anchor": "一五五长石",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五六、肤青",
+      "page_raw": null,
+      "anchor": "一五六肤青",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五七、干姜",
+      "page_raw": null,
+      "anchor": "一五七干姜",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五八、枭耳实",
+      "page_raw": null,
+      "anchor": "一五八枭耳实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一五九、葛根",
+      "page_raw": null,
+      "anchor": "一五九葛根",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六〇、瓜篓根",
+      "page_raw": null,
+      "anchor": "一六〇瓜篓根",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六一、苦参",
+      "page_raw": null,
+      "anchor": "一六一苦参",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六二、当归",
+      "page_raw": null,
+      "anchor": "一六二当归",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六三、麻黄",
+      "page_raw": null,
+      "anchor": "一六三麻黄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六四、通草",
+      "page_raw": null,
+      "anchor": "一六四通草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六五、芍药",
+      "page_raw": null,
+      "anchor": "一六五芍药",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六六、蠢实",
+      "page_raw": null,
+      "anchor": "一六六蠢实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六七、瞿麦",
+      "page_raw": null,
+      "anchor": "一六七瞿麦",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六八、玄参",
+      "page_raw": null,
+      "anchor": "一六八玄参",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一六九、秦艽",
+      "page_raw": null,
+      "anchor": "一六九秦艽",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七〇、百合",
+      "page_raw": null,
+      "anchor": "一七〇百合",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七一、知母",
+      "page_raw": null,
+      "anchor": "一七一知母",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七二、贝母",
+      "page_raw": null,
+      "anchor": "一七二贝母",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七三、白芷",
+      "page_raw": null,
+      "anchor": "一七三白芷",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七四、淫羊藿",
+      "page_raw": null,
+      "anchor": "一七四淫羊藿",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七五、黄芩",
+      "page_raw": null,
+      "anchor": "一七五黄芩",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七六，狗脊",
+      "page_raw": null,
+      "anchor": "一七六狗脊",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七七、石龙芮",
+      "page_raw": null,
+      "anchor": "一七七石龙芮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七八、白茅根",
+      "page_raw": null,
+      "anchor": "一七八白茅根",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一七九、紫苑",
+      "page_raw": null,
+      "anchor": "一七九紫苑",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八〇、紫草",
+      "page_raw": null,
+      "anchor": "一八〇紫草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八一、败酱草",
+      "page_raw": null,
+      "anchor": "一八一败酱草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八二、白鲜皮",
+      "page_raw": null,
+      "anchor": "一八二白鲜皮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八三、酸浆",
+      "page_raw": null,
+      "anchor": "一八三酸浆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八四、紫参",
+      "page_raw": null,
+      "anchor": "一八四紫参",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八五、稟本",
+      "page_raw": null,
+      "anchor": "一八五稟本",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八六、石苇",
+      "page_raw": null,
+      "anchor": "一八六石苇",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八七、萆薢",
+      "page_raw": null,
+      "anchor": "一八七萆薢",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八八、白薇",
+      "page_raw": null,
+      "anchor": "一八八白薇",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一八九、水萍",
+      "page_raw": null,
+      "anchor": "一八九水萍",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九〇、王瓜",
+      "page_raw": null,
+      "anchor": "一九〇王瓜",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九一、地榆",
+      "page_raw": null,
+      "anchor": "一九一地榆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九二、海藻",
+      "page_raw": null,
+      "anchor": "一九二海藻",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九三、泽兰",
+      "page_raw": null,
+      "anchor": "一九三泽兰",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九四、防己",
+      "page_raw": null,
+      "anchor": "一九四防己",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "理，利",
+      "page_raw": null,
+      "anchor": "理利",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九五、款冬花",
+      "page_raw": null,
+      "anchor": "一九五款冬花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九六、牡丹",
+      "page_raw": null,
+      "anchor": "一九六牡丹",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九七、马先蒿",
+      "page_raw": null,
+      "anchor": "一九七马先蒿",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九八、积雪草",
+      "page_raw": null,
+      "anchor": "一九八积雪草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一九九、女菀",
+      "page_raw": null,
+      "anchor": "一九九女菀",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇〇、王孙",
+      "page_raw": null,
+      "anchor": "二〇〇王孙",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇一、蜀羊泉",
+      "page_raw": null,
+      "anchor": "二〇一蜀羊泉",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇二、爵床",
+      "page_raw": null,
+      "anchor": "二〇二爵床",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇三、假苏",
+      "page_raw": null,
+      "anchor": "二〇三假苏",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇四、翘根",
+      "page_raw": null,
+      "anchor": "二〇四翘根",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇五、桑根白皮",
+      "page_raw": null,
+      "anchor": "二〇五桑根白皮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇六、竹叶",
+      "page_raw": null,
+      "anchor": "二〇六竹叶",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇七、吴茱萸",
+      "page_raw": null,
+      "anchor": "二〇七吴茱萸",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇八、桅子",
+      "page_raw": null,
+      "anchor": "二〇八桅子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二〇九、芜荑",
+      "page_raw": null,
+      "anchor": "二〇九芜荑",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一〇、枳实",
+      "page_raw": null,
+      "anchor": "二一〇枳实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一一、厚朴",
+      "page_raw": null,
+      "anchor": "二一一厚朴",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一二、秦皮",
+      "page_raw": null,
+      "anchor": "二一二秦皮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一三、秦椒",
+      "page_raw": null,
+      "anchor": "二一三秦椒",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一四、山茱萸",
+      "page_raw": null,
+      "anchor": "二一四山茱萸",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一五、紫葳",
+      "page_raw": null,
+      "anchor": "二一五紫葳",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一六、猪苓",
+      "page_raw": null,
+      "anchor": "二一六猪苓",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一七、白棘",
+      "page_raw": null,
+      "anchor": "二一七白棘",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一八、龙眼",
+      "page_raw": null,
+      "anchor": "二一八龙眼",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二一九、松萝",
+      "page_raw": null,
+      "anchor": "二一九松萝",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二〇、卫矛",
+      "page_raw": null,
+      "anchor": "二二〇卫矛",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二一、合欢",
+      "page_raw": null,
+      "anchor": "二二一合欢",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二二、白马茎",
+      "page_raw": null,
+      "anchor": "二二二白马茎",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二三、鹿茸",
+      "page_raw": null,
+      "anchor": "二二三鹿茸",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二四、牛角鳃",
+      "page_raw": null,
+      "anchor": "二二四牛角鳃",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二五、羖羊角",
+      "page_raw": null,
+      "anchor": "二二五羖羊角",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二六、牡狗阴茎",
+      "page_raw": null,
+      "anchor": "二二六牡狗阴茎",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二七、羚羊角",
+      "page_raw": null,
+      "anchor": "二二七羚羊角",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二八、犀角",
+      "page_raw": null,
+      "anchor": "二二八犀角",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二二九、燕屎",
+      "page_raw": null,
+      "anchor": "二二九燕屎",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三〇、天鼠屎",
+      "page_raw": null,
+      "anchor": "二三〇天鼠屎",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三一、猬皮",
+      "page_raw": null,
+      "anchor": "二三一猬皮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三二、露蜂房",
+      "page_raw": null,
+      "anchor": "二三二露蜂房",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三三、鳖甲",
+      "page_raw": null,
+      "anchor": "二三三鳖甲",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三四、蟹",
+      "page_raw": null,
+      "anchor": "二三四蟹",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三五、蚱蝉",
+      "page_raw": null,
+      "anchor": "二三五蚱蝉",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三六、蛴螬",
+      "page_raw": null,
+      "anchor": "二三六蛴螬",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三七、乌贼鱼骨",
+      "page_raw": null,
+      "anchor": "二三七乌贼鱼骨",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三八、白僵蚕",
+      "page_raw": null,
+      "anchor": "二三八白僵蚕",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二三九、鮀鱼甲",
+      "page_raw": null,
+      "anchor": "二三九鮀鱼甲",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四〇、樗鸡",
+      "page_raw": null,
+      "anchor": "二四〇樗鸡",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四一、蛞蝓",
+      "page_raw": null,
+      "anchor": "二四一蛞蝓",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四二、石龙子",
+      "page_raw": null,
+      "anchor": "二四二石龙子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四四、蜚虻",
+      "page_raw": null,
+      "anchor": "二四四蜚虻",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四五、蜚蠊",
+      "page_raw": null,
+      "anchor": "二四五蜚蠊",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四六、蟬虫",
+      "page_raw": null,
+      "anchor": "二四六蟬虫",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四七、伏翼",
+      "page_raw": null,
+      "anchor": "二四七伏翼",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四八、梅实",
+      "page_raw": null,
+      "anchor": "二四八梅实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二四九、大豆黄卷",
+      "page_raw": null,
+      "anchor": "二四九大豆黄卷",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五〇、粟米",
+      "page_raw": null,
+      "anchor": "二五〇粟米",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五一、黍米",
+      "page_raw": null,
+      "anchor": "二五一黍米",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五二、蓼实",
+      "page_raw": null,
+      "anchor": "二五二蓼实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五三、葱实",
+      "page_raw": null,
+      "anchor": "二五三葱实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五四、水苏",
+      "page_raw": null,
+      "anchor": "二五四水苏",
+      "match": "标题本身"
+    },
+    {
+      "level": 1,
+      "title": "叁、下经",
+      "page_raw": null,
+      "anchor": "叁下经",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五五、石灰",
+      "page_raw": null,
+      "anchor": "二五五石灰",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五六、譽石",
+      "page_raw": null,
+      "anchor": "二五六譽石",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五七、铅丹",
+      "page_raw": null,
+      "anchor": "二五七铅丹",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五八、粉杨",
+      "page_raw": null,
+      "anchor": "二五八粉杨",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二五九、代赭",
+      "page_raw": null,
+      "anchor": "二五九代赭",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六〇、卤咸",
+      "page_raw": null,
+      "anchor": "二六〇卤咸",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六一、白垩",
+      "page_raw": null,
+      "anchor": "二六一白垩",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六二、冬灰",
+      "page_raw": null,
+      "anchor": "二六二冬灰",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六三、青琅玕",
+      "page_raw": null,
+      "anchor": "二六三青琅玕",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六四、附子",
+      "page_raw": null,
+      "anchor": "二六四附子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六五、乌头",
+      "page_raw": null,
+      "anchor": "二六五乌头",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六六、天雄",
+      "page_raw": null,
+      "anchor": "二六六天雄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六七、半夏",
+      "page_raw": null,
+      "anchor": "二六七半夏",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六八、虎掌",
+      "page_raw": null,
+      "anchor": "二六八虎掌",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二六九、鸢尾",
+      "page_raw": null,
+      "anchor": "二六九鸢尾",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七〇、大黄",
+      "page_raw": null,
+      "anchor": "二七〇大黄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七一、葶苈",
+      "page_raw": null,
+      "anchor": "二七一葶苈",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七二、桔梗",
+      "page_raw": null,
+      "anchor": "二七二桔梗",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七三、莨菪子",
+      "page_raw": null,
+      "anchor": "二七三莨菪子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七四、草蒿",
+      "page_raw": null,
+      "anchor": "二七四草蒿",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七五、旋复花",
+      "page_raw": null,
+      "anchor": "二七五旋复花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七六、藜芦",
+      "page_raw": null,
+      "anchor": "二七六藜芦",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七七、钩吻",
+      "page_raw": null,
+      "anchor": "二七七钩吻",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七八、射干",
+      "page_raw": null,
+      "anchor": "二七八射干",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二七九、蛇含",
+      "page_raw": null,
+      "anchor": "二七九蛇含",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八〇、恒山",
+      "page_raw": null,
+      "anchor": "二八〇恒山",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八一、蜀漆",
+      "page_raw": null,
+      "anchor": "二八一蜀漆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八二、甘遂",
+      "page_raw": null,
+      "anchor": "二八二甘遂",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八三、白敛",
+      "page_raw": null,
+      "anchor": "二八三白敛",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八四、青箱子",
+      "page_raw": null,
+      "anchor": "二八四青箱子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八五、藿菌",
+      "page_raw": null,
+      "anchor": "二八五藿菌",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八六、白及",
+      "page_raw": null,
+      "anchor": "二八六白及",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八七、大戟",
+      "page_raw": null,
+      "anchor": "二八七大戟",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八八、泽漆",
+      "page_raw": null,
+      "anchor": "二八八泽漆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二八九、茵芋",
+      "page_raw": null,
+      "anchor": "二八九茵芋",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九〇、贯众",
+      "page_raw": null,
+      "anchor": "二九〇贯众",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九一、荛花",
+      "page_raw": null,
+      "anchor": "二九一荛花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九二、牙子",
+      "page_raw": null,
+      "anchor": "二九二牙子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九三、羊踯躅",
+      "page_raw": null,
+      "anchor": "二九三羊踯躅",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九四、商陆",
+      "page_raw": null,
+      "anchor": "二九四商陆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九五、羊蹄",
+      "page_raw": null,
+      "anchor": "二九五羊蹄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九六、萹蓄",
+      "page_raw": null,
+      "anchor": "二九六萹蓄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九七、狼毒",
+      "page_raw": null,
+      "anchor": "二九七狼毒",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九八、白头翁",
+      "page_raw": null,
+      "anchor": "二九八白头翁",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二九九、鬼臼",
+      "page_raw": null,
+      "anchor": "二九九鬼臼",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇〇、羊桃",
+      "page_raw": null,
+      "anchor": "三〇〇羊桃",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇一、女青",
+      "page_raw": null,
+      "anchor": "三〇一女青",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇二、连翘",
+      "page_raw": null,
+      "anchor": "三〇二连翘",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇三、薺茹",
+      "page_raw": null,
+      "anchor": "三〇三薺茹",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇四、乌韭",
+      "page_raw": null,
+      "anchor": "三〇四乌韭",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇五、鹿藿",
+      "page_raw": null,
+      "anchor": "三〇五鹿藿",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇六、蚤休",
+      "page_raw": null,
+      "anchor": "三〇六蚤休",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇七、石长生",
+      "page_raw": null,
+      "anchor": "三〇七石长生",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇八、陆英",
+      "page_raw": null,
+      "anchor": "三〇八陆英",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三〇九、盖草",
+      "page_raw": null,
+      "anchor": "三〇九盖草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一〇、牛扁",
+      "page_raw": null,
+      "anchor": "三一〇牛扁",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一一、夏枯草",
+      "page_raw": null,
+      "anchor": "三一一夏枯草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一二、芫花",
+      "page_raw": null,
+      "anchor": "三一二芫花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一三、巴豆",
+      "page_raw": null,
+      "anchor": "三一三巴豆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一四、蜀椒",
+      "page_raw": null,
+      "anchor": "三一四蜀椒",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一五、皂荚",
+      "page_raw": null,
+      "anchor": "三一五皂荚",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一六、柳花",
+      "page_raw": null,
+      "anchor": "三一六柳花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一七、棟实",
+      "page_raw": null,
+      "anchor": "三一七棟实",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一八、郁李仁",
+      "page_raw": null,
+      "anchor": "三一八郁李仁",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三一九、莽草",
+      "page_raw": null,
+      "anchor": "三一九莽草",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二〇、雷丸",
+      "page_raw": null,
+      "anchor": "三二〇雷丸",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二一、桐叶",
+      "page_raw": null,
+      "anchor": "三二一桐叶",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二二、梓白皮",
+      "page_raw": null,
+      "anchor": "三二二梓白皮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二三、古南",
+      "page_raw": null,
+      "anchor": "三二三古南",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二四、黄环",
+      "page_raw": null,
+      "anchor": "三二四黄环",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二五、溲疏",
+      "page_raw": null,
+      "anchor": "三二五溲疏",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二六、鼠李",
+      "page_raw": null,
+      "anchor": "三二六鼠李",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二七、药实根",
+      "page_raw": null,
+      "anchor": "三二七药实根",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二八、栾花",
+      "page_raw": null,
+      "anchor": "三二八栾花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三二九、蔓椒",
+      "page_raw": null,
+      "anchor": "三二九蔓椒",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三〇、豚卵",
+      "page_raw": null,
+      "anchor": "三三〇豚卵",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三一、糜脂",
+      "page_raw": null,
+      "anchor": "三三一糜脂",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三二、(鼯)鼠",
+      "page_raw": null,
+      "anchor": "三三二鼯鼠",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三三、六畜毛蹄甲",
+      "page_raw": null,
+      "anchor": "三三三六畜毛蹄甲",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三四、虾蟆",
+      "page_raw": null,
+      "anchor": "三三四虾蟆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三五、马刀",
+      "page_raw": null,
+      "anchor": "三三五马刀",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三六、蛇蜕",
+      "page_raw": null,
+      "anchor": "三三六蛇蜕",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三七、白颈蚯蚓",
+      "page_raw": null,
+      "anchor": "三三七白颈蚯蚓",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三八、翳蠔",
+      "page_raw": null,
+      "anchor": "三三八翳蠔",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三三九、蜈蚣",
+      "page_raw": null,
+      "anchor": "三三九蜈蚣",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四○、水蛭",
+      "page_raw": null,
+      "anchor": "三四水蛭",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四一、斑蠡（猫）",
+      "page_raw": null,
+      "anchor": "三四一斑蠡猫",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四二、贝子",
+      "page_raw": null,
+      "anchor": "三四二贝子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四三、石蚕",
+      "page_raw": null,
+      "anchor": "三四三石蚕",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四四、雀瓮",
+      "page_raw": null,
+      "anchor": "三四四雀瓮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四五、蜣螂",
+      "page_raw": null,
+      "anchor": "三四五蜣螂",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四六、蝼蛄",
+      "page_raw": null,
+      "anchor": "三四六蝼蛄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四七、马陆",
+      "page_raw": null,
+      "anchor": "三四七马陆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四八、地胆",
+      "page_raw": null,
+      "anchor": "三四八地胆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三四九、鼠妇",
+      "page_raw": null,
+      "anchor": "三四九鼠妇",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五〇、萤火",
+      "page_raw": null,
+      "anchor": "三五〇萤火",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五一、衣鱼",
+      "page_raw": null,
+      "anchor": "三五一衣鱼",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五二、桃核仁",
+      "page_raw": null,
+      "anchor": "三五二桃核仁",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五三、杏核仁",
+      "page_raw": null,
+      "anchor": "三五三杏核仁",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五四、腐婢",
+      "page_raw": null,
+      "anchor": "三五四腐婢",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五五、苦瓠",
+      "page_raw": null,
+      "anchor": "三五五苦瓠",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五六、水靳",
+      "page_raw": null,
+      "anchor": "三五六水靳",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三五七、彼子",
+      "page_raw": null,
+      "anchor": "三五七彼子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "增补神农本草经不足部分",
+      "page_raw": null,
+      "anchor": "增补神农本草经不足部分",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "一、青盐",
+      "page_raw": null,
+      "anchor": "一青盐",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二、诃黎勒（诃子）",
+      "page_raw": null,
+      "anchor": "二诃黎勒诃子",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "三、红花",
+      "page_raw": null,
+      "anchor": "三红花",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "四、蜘蛛",
+      "page_raw": null,
+      "anchor": "四蜘蛛",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "五、赤小豆",
+      "page_raw": null,
+      "anchor": "五赤小豆",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "六、艾叶",
+      "page_raw": null,
+      "anchor": "六艾叶",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "七、紫苏",
+      "page_raw": null,
+      "anchor": "七紫苏",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "八、饴糖",
+      "page_raw": null,
+      "anchor": "八饴糖",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "九、柏叶（侧柏叶）",
+      "page_raw": null,
+      "anchor": "九柏叶侧柏叶",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十、豆豉",
+      "page_raw": null,
+      "anchor": "十豆豉",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十一鸡矢白",
+      "page_raw": null,
+      "anchor": "十一鸡矢白",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十二、蒴翟细叶",
+      "page_raw": null,
+      "anchor": "十二蒴翟细叶",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十三、没药",
+      "page_raw": null,
+      "anchor": "十三没药",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十四、乳香",
+      "page_raw": null,
+      "anchor": "十四乳香",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十五、白芷",
+      "page_raw": null,
+      "anchor": "十五白芷",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十六、粳米",
+      "page_raw": null,
+      "anchor": "十六粳米",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十七、甘李根白皮",
+      "page_raw": null,
+      "anchor": "十七甘李根白皮",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十八、三七",
+      "page_raw": null,
+      "anchor": "十八三七",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "十九、鸡子黄",
+      "page_raw": null,
+      "anchor": "十九鸡子黄",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十、猪胆、猪肤",
+      "page_raw": null,
+      "anchor": "二十猪胆猪肤",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十一、郁金",
+      "page_raw": null,
+      "anchor": "二十一郁金",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十二、木通",
+      "page_raw": null,
+      "anchor": "二十二木通",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十三、新绛",
+      "page_raw": null,
+      "anchor": "二十三新绛",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十四、薤白",
+      "page_raw": null,
+      "anchor": "二十四薤白",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十五、白前",
+      "page_raw": null,
+      "anchor": "二十五白前",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十六、神曲",
+      "page_raw": null,
+      "anchor": "二十六神曲",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十七、小麦",
+      "page_raw": null,
+      "anchor": "二十七小麦",
+      "match": "标题本身"
+    },
+    {
+      "level": 2,
+      "title": "二十八、灶心土",
+      "page_raw": null,
+      "anchor": "二十八灶心土",
+      "match": "标题本身"
+    }
+  ]
+}

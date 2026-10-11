@@ -1,0 +1,73 @@
+{
+  "id": "guizhi-tang",
+  "name": "桂枝汤",
+  "aliases": ["阳旦汤"],
+  "category": "解表剂·辛温解表",
+
+  "source": {
+    "book": "伤寒论",
+    "article_no": 12,
+    "license_status": "公有领域",
+    "original_text": "太阳中风，阳浮而阴弱，阳浮者，热自发，阴弱者，汗自出，啬啬恶寒，淅淅恶风，翕翕发热，鼻鸣干呕者，桂枝汤主之。"
+  },
+
+  "composition": [
+    { "herb": "桂枝", "original_amount": "三两", "processing": "去皮", "role": "君" },
+    { "herb": "芍药", "original_amount": "三两", "processing": null, "role": "臣" },
+    { "herb": "甘草", "original_amount": "二两", "processing": "炙", "role": "佐" },
+    { "herb": "生姜", "original_amount": "三两", "processing": "切", "role": "佐" },
+    { "herb": "大枣", "original_amount": "十二枚", "processing": "擘", "role": "使" }
+  ],
+
+  "preparation": "上五味，㕮咀三味，以水七升，微火煮取三升，去滓，适寒温，服一升。服已须臾，啜热稀粥一升余，以助药力。温覆令一时许，遍身漐漐微似有汗者益佳，不可令如水流漓，病必不除。若一服汗出病差，停后服，不必尽剂。",
+
+  "dosage_withheld": true,
+  "dosage_note": "本方仅提供古籍原比例（两/枚），不提供现代克数。剂量须由执业中医师根据患者体质、年龄与病情面诊确定。",
+
+  "indications": ["太阳中风表虚证", "营卫不和", "自汗"],
+
+  "classic_articles": [
+    { "no": 12, "text": "太阳中风，阳浮而阴弱……鼻鸣干呕者，桂枝汤主之。" },
+    { "no": 13, "text": "太阳病，头痛发热，汗出恶风，桂枝汤主之。" },
+    { "no": 95, "text": "太阳病，发热汗出者，此为荣弱卫强，故使汗出，欲救邪风者，宜桂枝汤。" }
+  ],
+
+  "contraindications": [
+    "表实无汗者（当用麻黄汤）",
+    "温热病、里热证",
+    "酒客病",
+    "原文禁例：「桂枝本为解肌，若其人脉浮紧，发热汗不出者，不可与之也。」（第16条）"
+  ],
+
+  "modifications": [
+    { "name": "桂枝加葛根汤", "change": "加葛根四两", "origin": "古籍", "article_no": 14 },
+    { "name": "桂枝加厚朴杏子汤", "change": "加厚朴二两、杏仁五十枚", "origin": "古籍", "article_no": 18 },
+    { "name": "桂枝加附子汤", "change": "加附子一枚（炮）", "origin": "古籍", "article_no": 20, "caution": "含毒性药，须医师掌握" },
+    { "name": "桂枝新加汤", "change": "芍药、生姜各加一两，人参三两", "origin": "古籍", "article_no": 62 }
+  ],
+
+  "six_channel": "太阳",
+  "eight_principles": {
+    "yin_yang": "阳",
+    "exterior_interior": "表",
+    "cold_heat": "寒",
+    "deficiency_excess": "虚"
+  },
+
+  "formula_analysis": {
+    "chief": "桂枝——解肌发表，温通卫阳",
+    "deputy": "芍药——敛阴和营，与桂枝相配调和营卫",
+    "assistant": "生姜——助桂枝散寒；甘草——调和诸药",
+    "guide": "大枣——益气和中，助芍药以和营",
+    "summary": "桂枝与芍药等量相配，一散一收，散中有收，汗中有补，故称「调和营卫」第一方。"
+  },
+
+  "cautions": [
+    "服后须啜热稀粥、温覆取微汗，不可大汗淋漓",
+    "「汗出病差，停后服」，中病即止，不必尽剂"
+  ],
+
+  "evidence_level": "原文",
+  "review_status": "已校对",
+  "reviewed_at": "2025-10"
+}

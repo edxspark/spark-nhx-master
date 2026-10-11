@@ -1,0 +1,646 @@
+{
+  "source": "人纪系列金匮下册.html",
+  "generator": "scripts/repair_books.py",
+  "toc_mode": "重建目录（页码为阿拉伯数字）",
+  "generated_at": "2026-10-11 19:32:04",
+  "entry_count": 91,
+  "entries": [
+    {
+      "level": 1,
+      "title": "呕吐哕下利病脉证治第十七",
+      "page_raw": "6",
+      "anchor": "呕吐哕下利病脉证治第十七",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "吴茱萸汤方",
+      "page_raw": "8",
+      "anchor": "吴茱萸汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "半夏泻心汤方",
+      "page_raw": "10",
+      "anchor": "半夏泻心汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "黄芩加半夏泻心汤方",
+      "page_raw": "11",
+      "anchor": "黄芩加半夏泻心汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "猪苓散方",
+      "page_raw": "12",
+      "anchor": "猪苓散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "四逆汤方",
+      "page_raw": "13",
+      "anchor": "四逆汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "肾衰竭与尿毒症处方",
+      "page_raw": "13",
+      "anchor": "肾衰竭与尿毒症处方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "小柴胡汤",
+      "page_raw": "15",
+      "anchor": "小柴胡汤",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "大半夏汤方",
+      "page_raw": "15",
+      "anchor": "大半夏汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "大黄甘草汤方",
+      "page_raw": "16",
+      "anchor": "大黄甘草汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "茯苓泽泻汤方",
+      "page_raw": "17",
+      "anchor": "茯苓泽泻汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "文蛤汤方",
+      "page_raw": "18",
+      "anchor": "文蛤汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "生姜半夏汤方",
+      "page_raw": "20",
+      "anchor": "生姜半夏汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "橘皮汤方",
+      "page_raw": "22",
+      "anchor": "橘皮汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "小承气汤方",
+      "page_raw": "30",
+      "anchor": "小承气汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "桃花汤方",
+      "page_raw": "30",
+      "anchor": "桃花汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "白头翁汤方",
+      "page_raw": "31",
+      "anchor": "白头翁汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "栀子豉汤",
+      "page_raw": "32",
+      "anchor": "栀子豉汤",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "通脉四逆汤方",
+      "page_raw": "32",
+      "anchor": "通脉四逆汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "紫参汤方",
+      "page_raw": "33",
+      "anchor": "紫参汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "定喘急诊",
+      "page_raw": "34",
+      "anchor": "定喘急诊",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "诃梨勒散方",
+      "page_raw": "34",
+      "anchor": "诃梨勒散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "疮痈肠痈浸淫病脉证并治第十八",
+      "page_raw": "35",
+      "anchor": "疮痈肠痈浸淫病脉证并治第十八",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "仙方活命饮",
+      "page_raw": "36",
+      "anchor": "仙方活命饮",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "大黄牡丹汤方",
+      "page_raw": "37",
+      "anchor": "大黄牡丹汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "薏苡附子败酱散方",
+      "page_raw": "39",
+      "anchor": "薏苡附子败酱散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "王不留行散方",
+      "page_raw": "40",
+      "anchor": "王不留行散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "排脓散方",
+      "page_raw": "41",
+      "anchor": "排脓散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "排脓汤方",
+      "page_raw": "41",
+      "anchor": "排脓汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "黄连粉",
+      "page_raw": "42",
+      "anchor": "黄连粉",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "跗蹶手指臂肿转筋阴狐疝蚡虫病脉证治第十九",
+      "page_raw": "43",
+      "anchor": "跗蹶手指臂肿转筋阴狐疝蚡虫病脉证治第十九",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "藜芦甘草汤方",
+      "page_raw": "44",
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 2,
+      "title": "鸡矢白散方",
+      "page_raw": "45",
+      "anchor": "鸡矢白散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "蜘蛛散方",
+      "page_raw": "46",
+      "anchor": "蜘蛛散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "甘草粉蜜汤方",
+      "page_raw": "46",
+      "anchor": "甘草粉蜜汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "乌梅丸方",
+      "page_raw": "48",
+      "anchor": "乌梅丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "妇人妊娠病脉证并治第二十",
+      "page_raw": "48",
+      "anchor": "妇人妊娠病脉证并治第二十",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "桂枝茯苓丸方",
+      "page_raw": "51",
+      "anchor": "桂枝茯苓丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "胶艾汤",
+      "page_raw": "53",
+      "anchor": "胶艾汤",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "干姜人参半夏丸方",
+      "page_raw": "56",
+      "anchor": "干姜人参半夏丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "当归贝母苦参丸方",
+      "page_raw": "56",
+      "anchor": "当归贝母苦参丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "葵子茯苓散方",
+      "page_raw": "57",
+      "anchor": "葵子茯苓散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "当归散方",
+      "page_raw": "58",
+      "anchor": "当归散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "白术散方",
+      "page_raw": "58",
+      "anchor": "白术散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "《补充》难产方",
+      "page_raw": "59",
+      "anchor": "补充难产方",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "妇人产后病脉证治第二十一",
+      "page_raw": "61",
+      "anchor": "妇人产后病脉证治第二十一",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "枳实芍药散方",
+      "page_raw": "63",
+      "anchor": "枳实芍药散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "下瘀血汤方",
+      "page_raw": "63",
+      "anchor": "下瘀血汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "阳旦汤方",
+      "page_raw": "64",
+      "anchor": "阳旦汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "竹叶汤方",
+      "page_raw": "65",
+      "anchor": "竹叶汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "竹皮大丸方",
+      "page_raw": "66",
+      "anchor": "竹皮大丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "白头翁加甘草阿胶汤方",
+      "page_raw": "67",
+      "anchor": "白头翁加甘草阿胶汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "妇人杂病脉证治第二十二",
+      "page_raw": "68",
+      "anchor": "妇人杂病脉证治第二十二",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "甘麦大枣汤方",
+      "page_raw": "70",
+      "anchor": "甘麦大枣汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "温经汤方",
+      "page_raw": "77",
+      "anchor": "温经汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "土瓜根散方",
+      "page_raw": "79",
+      "anchor": "土瓜根散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "大黄甘遂汤方",
+      "page_raw": "80",
+      "anchor": "大黄甘遂汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "抵当汤方",
+      "page_raw": "81",
+      "anchor": "抵当汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "矾石丸方",
+      "page_raw": "82",
+      "anchor": "矾石丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "红蓝花酒方",
+      "page_raw": "83",
+      "anchor": "红蓝花酒方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "肾气丸方",
+      "page_raw": "84",
+      "anchor": "肾气丸方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "蛇床子散方",
+      "page_raw": "86",
+      "anchor": "蛇床子散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "狼牙汤方",
+      "page_raw": "87",
+      "anchor": "狼牙汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "猪膏发煎方",
+      "page_raw": "87",
+      "anchor": "猪膏发煎方",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "阴阳易差后劳复第二十三",
+      "page_raw": "88",
+      "anchor": "阴阳易差后劳复第二十三",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "烧棍散方",
+      "page_raw": "88",
+      "anchor": "烧棍散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "梅毒解毒剂",
+      "page_raw": "88",
+      "anchor": "梅毒解毒剂",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "阿胶附子汤",
+      "page_raw": "89",
+      "anchor": "阿胶附子汤",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "枳实栀子豉汤方",
+      "page_raw": "89",
+      "anchor": "枳实栀子豉汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "牡蛎泽泻散方",
+      "page_raw": "90",
+      "anchor": "牡蛎泽泻散方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "石膏汤方",
+      "page_raw": "91",
+      "anchor": "石膏汤方",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "人纪补充病例",
+      "page_raw": "92",
+      "anchor": "人纪补充病例",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "淋巴癌血癌",
+      "page_raw": "92",
+      "anchor": "淋巴癌血癌",
+      "match": "标题一致"
+    },
+    {
+      "level": 1,
+      "title": "金匮案例篇",
+      "page_raw": "97",
+      "anchor": "金匮案例篇",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-1",
+      "page_raw": "97",
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 2,
+      "title": "09-2",
+      "page_raw": "102",
+      "anchor": "section",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-3",
+      "page_raw": "107",
+      "anchor": "section-1",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-4",
+      "page_raw": "112",
+      "anchor": "section-2",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-5",
+      "page_raw": "118",
+      "anchor": "section-3",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-6",
+      "page_raw": "124",
+      "anchor": "section-4",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-7",
+      "page_raw": "130",
+      "anchor": "section-5",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "09-8",
+      "page_raw": "135",
+      "anchor": "section-6",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "10-1",
+      "page_raw": "137",
+      "anchor": "section-7",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "肺炎",
+      "page_raw": "142",
+      "anchor": "肺炎",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "10-2",
+      "page_raw": "142",
+      "anchor": null,
+      "match": null
+    },
+    {
+      "level": 2,
+      "title": "10-3",
+      "page_raw": "147",
+      "anchor": "section-8",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "肾癌案例",
+      "page_raw": "147",
+      "anchor": "肾癌案例",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "红斑性狼疮案例",
+      "page_raw": "151",
+      "anchor": "红斑性狼疮案例",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "10-4",
+      "page_raw": "152",
+      "anchor": "section-9",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "10-5",
+      "page_raw": "158",
+      "anchor": "section-10",
+      "match": "标题一致"
+    },
+    {
+      "level": 2,
+      "title": "易筋经全集",
+      "page_raw": "158",
+      "anchor": "易筋经全集",
+      "match": "标题一致"
+    }
+  ]
+}

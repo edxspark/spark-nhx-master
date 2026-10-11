@@ -1,0 +1,31 @@
+# 环境变量：含 API Key 等密钥，绝不入库（.env.example 才是模板）
+.env
+.env.local
+
+# 运行期数据：认证凭据/会话内容（含用户健康信息，属敏感个人信息），绝不入库
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+.vscode/
+
+# 媒体本体（索引入库，媒体不入库）
+media/**/*.mp4
+media/**/*.mp3
+media/**/*.m4a
+
+# 书籍 OCR 全文：是受版权书籍的可搜索全文，不进公开仓库（PDF 本体见 .gitattributes 走 LFS）
+# 只入库整理产物（.md / .json / .txt 报告与结构化数据）与 .acceptance/ 验收截图
+book/**/*.html
+
+# 书籍整理前的备份稿：同为全文副本，且可由 scripts/repair_books.py 再生
+# ⚠️ scripts/verify_books.py 需要它在本地存在才能比对「正文零改动」，克隆后需自行准备
+book/**/.backup/
+
+# 临时
+*.tmp
+.DS_Store

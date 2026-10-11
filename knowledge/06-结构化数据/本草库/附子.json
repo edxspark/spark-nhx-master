@@ -1,0 +1,59 @@
+{
+  "id": "fuzi",
+  "name": "附子",
+  "aliases": ["附片", "盐附子", "黑顺片", "白附片"],
+  "category": "温里药",
+
+  "source": {
+    "book": "神农本草经",
+    "grade": "下品",
+    "license_status": "公有领域"
+  },
+
+  "original_text": "附子，味辛温。主风寒咳逆邪气，温中，金创，破症坚积聚血瘕，寒湿踒躄，拘挛膝痛，不能行步。",
+
+  "nature_flavor": { "nature": "大热", "flavor": "辛、甘" },
+  "meridians": ["心", "肾", "脾"],
+  "effects": ["回阳救逆", "补火助阳", "散寒止痛"],
+
+  "toxicity": {
+    "level": "大毒",
+    "toxic_components": ["乌头碱", "新乌头碱", "次乌头碱", "塔拉乌头胺"],
+    "risk": "治疗窗极窄。乌头碱口服 0.2 mg 即可引起中毒，2–4 mg 可致死亡。中毒表现为口舌及四肢麻木、心悸、心律失常（室性早搏、室颤）、呼吸抑制，可致心搏骤停。",
+    "mechanism": "乌头碱直接兴奋心肌与迷走神经，导致致命性心律失常。",
+    "requires_physician": true,
+    "must_be_processed": "必须使用炮制品（盐附子、黑顺片、白附片），生附子禁止内服。",
+    "decotion_requirement": "必须先煎 1–2 小时，至口尝无麻辣感后方可入他药同煎。",
+    "antidote": "中毒应立即停药并急诊；早期可催吐、洗胃，心律失常需心电监护与对症处理。",
+    "dosage_withheld": true,
+    "dosage_note": "本库不提供任何现代克数建议。剂量由执业中医师根据炮制品规格、先煎时长与患者体质决定。",
+    "forbidden_populations": ["孕妇", "阴虚阳亢者", "心脏疾病患者", "婴幼儿"]
+  },
+
+  "contraindications": [
+    "阴虚阳亢、真热假寒者禁用",
+    "孕妇禁用",
+    "不宜与半夏、瓜蒌、瓜蒌子、瓜蒌皮、天花粉、川贝母、浙贝母、平贝母、伊贝母、湖北贝母、白蔹、白及同用（十八反）"
+  ],
+
+  "interactions": {
+    "eighteen_clashes": ["半夏", "瓜蒌", "天花粉", "川贝母", "浙贝母", "白蔹", "白及"],
+    "nineteen_incompatibilities": [],
+    "western_drug_interactions": [
+      "与洋地黄类强心苷合用可增加心律失常风险",
+      "与肾上腺素类合用可增加心脏毒性"
+    ]
+  },
+
+  "processing_methods": [
+    { "name": "盐附子", "note": "用胆巴水与食盐加工，毒性降低" },
+    { "name": "黑顺片", "note": "煮后切片，糖色染色" },
+    { "name": "白附片", "note": "煮后剥皮切片" },
+    { "name": "炮附片", "note": "砂烫炮制" }
+  ],
+
+  "evidence_level": "原文",
+  "safety_review_status": "已复核",
+  "safety_reviewed_at": "2025-10",
+  "safety_reviewer_note": "毒性数据依据《中国药典》与乌头碱毒理学文献。本字段为强制输出内容，任何提及附子的回答都必须转达 risk 与 requires_physician。"
+}
